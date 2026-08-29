@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Só Chef | Sanduíches Naturais</title>
 
@@ -11,1999 +17,2936 @@
         content="Só Chef — sanduíches naturais prontos para consumo. Conheça nossa linha de produtos e seja um revendedor."
     >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #242424;
-            background: #ffffff;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button {
-            font-family: inherit;
-        }
-
-        :root {
-            --green: #72b52c;
-            --green-dark: #315f24;
-            --green-light: #edf6df;
-
-            --olive: #718448;
-            --cream-green: #5d9140;
-
-            --blue: #577b8b;
-            --blue-dark: #315e6d;
-
-            --cream: #f7f5ed;
-
-            --text: #252525;
-            --text-light: #686868;
-
-            --white: #ffffff;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-            width: 100%;
-            background: #ffffff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-
-        .header-container {
-            max-width: 1180px;
-            height: 82px;
-            margin: auto;
-            padding: 0 30px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo-text {
-            color: var(--green-dark);
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -1.5px;
-            line-height: 1;
-        }
-
-        .logo-text span {
-            font-weight: 500;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 34px;
-        }
-
-        nav a {
-            font-size: 12px;
-            font-weight: 500;
-            color: #4b4b4b;
-            transition: 0.25s;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--green-dark);
-        }
-
-        nav a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -7px;
-            width: 0;
-            height: 2px;
-            background: var(--green);
-            transition: 0.25s;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .header-button {
-            background: var(--green);
-            color: white;
-            padding: 12px 19px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 700;
-            transition: 0.25s;
-        }
-
-        .header-button:hover {
-            background: var(--green-dark);
-            transform: translateY(-1px);
-        }
-
-        .mobile-menu-button {
-            display: none;
-            border: 0;
-            background: transparent;
-            font-size: 25px;
-            color: var(--green-dark);
-            cursor: pointer;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            min-height: 610px;
-            background: var(--green-light);
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-container {
-            max-width: 1180px;
-            width: 100%;
-            margin: auto;
-            padding: 70px 30px;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .hero-text {
-            max-width: 570px;
-        }
-
-        .hero-tag {
-            display: inline-block;
-            color: var(--green-dark);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 5vw, 62px);
-            line-height: 1.06;
-            font-weight: 800;
-            color: var(--green-dark);
-            margin-bottom: 22px;
-            letter-spacing: -2px;
-        }
-
-        .hero h1 span {
-            color: var(--green);
-        }
-
-        .hero p {
-            color: #565656;
-            font-size: 17px;
-            line-height: 1.7;
-            max-width: 500px;
-            margin-bottom: 32px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            align-items: center;
-            gap: 13px;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            background: var(--green);
-            color: #ffffff;
-
-            padding: 15px 25px;
-            border-radius: 4px;
-
-            font-size: 11px;
-            font-weight: 700;
-
-            letter-spacing: 0.3px;
-            transition: 0.25s;
-        }
-
-        .btn-primary:hover {
-            background: var(--green-dark);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            border: 1px solid #8ca06c;
-            color: var(--green-dark);
-
-            padding: 14px 24px;
-            border-radius: 4px;
-
-            font-size: 11px;
-            font-weight: 600;
-
-            transition: 0.25s;
-        }
-
-        .btn-secondary:hover {
-            background: #ffffff;
-        }
-
-        .hero-product {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 470px;
-        }
-
-        .hero-product img {
-            width: min(410px, 90%);
-            filter: drop-shadow(0 25px 30px rgba(0,0,0,0.16));
-            transition: transform 0.4s;
-        }
-
-        .hero-product img:hover {
-            transform: translateY(-8px) rotate(-1deg);
-        }
-
-
-        /* =========================
-           TITULOS
-        ========================= */
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .section-title span {
-            display: block;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--green);
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        .section-title h2 {
-            font-size: clamp(28px, 4vw, 40px);
-            line-height: 1.15;
-            color: var(--green-dark);
-            font-weight: 700;
-        }
-
-        .section-title p {
-            max-width: 600px;
-            margin: 14px auto 0;
-            color: var(--text-light);
-            font-size: 13px;
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           PRODUTOS
-        ========================= */
-
-        .products-section {
-            padding: 80px 0 0;
-        }
-
-        .products-grid {
-            max-width: 1380px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .product-card {
-            min-height: 650px;
-            padding: 45px 30px 42px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-card.integral {
-            background: #718448;
-        }
-
-        .product-card.cream {
-            background: #5d9140;
-        }
-
-        .product-card.peru {
-            background: #577b8b;
-        }
-
-        .product-card::before {
-            content: "";
-            position: absolute;
-
-            width: 300px;
-            height: 300px;
-
-            border-radius: 50%;
-
-            background: rgba(255,255,255,0.07);
-
-            top: 45px;
-            left: 50%;
-
-            transform: translateX(-50%);
-        }
-
-        .product-image {
-            height: 420px;
-            width: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            position: relative;
-            z-index: 1;
-        }
-
-        .product-image img {
-            height: 395px;
-            width: auto;
-            max-width: 90%;
-
-            object-fit: contain;
-
-            filter: drop-shadow(0 20px 20px rgba(0,0,0,0.20));
-
-            transition: 0.4s;
-        }
-
-        .product-card:hover .product-image img {
-            transform: translateY(-8px) scale(1.02);
-        }
-
-        .product-info {
-            position: relative;
-            z-index: 2;
-            color: #ffffff;
-        }
-
-        .product-info h3 {
-            font-size: 25px;
-            line-height: 1.2;
-            font-weight: 600;
-            margin-bottom: 13px;
-        }
-
-        .product-info p {
-            font-size: 11px;
-            line-height: 1.6;
-            max-width: 330px;
-            margin: auto;
-            opacity: 0.94;
-        }
-
-
-        /* =========================
-           SOBRE
-        ========================= */
-
-        .about-section {
-            padding: 100px 30px;
-            background: #ffffff;
-        }
-
-        .about-container {
-            max-width: 1120px;
-            margin: auto;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            gap: 80px;
-            align-items: center;
-        }
-
-        .about-image {
-            background: var(--green-light);
-            min-height: 450px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .about-image img {
-            width: 75%;
-            max-width: 390px;
-
-            filter: drop-shadow(0 20px 25px rgba(0,0,0,0.12));
-        }
-
-        .about-content span {
-            color: var(--green);
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .about-content h2 {
-            color: var(--green-dark);
-            font-size: clamp(30px, 4vw, 44px);
-            line-height: 1.12;
-            margin: 14px 0 20px;
-        }
-
-        .about-content p {
-            color: var(--text-light);
-            font-size: 13px;
-            line-height: 1.8;
-            margin-bottom: 18px;
-        }
-
-        .about-features {
-            margin-top: 30px;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            gap: 20px;
-        }
-
-        .feature {
-            padding-left: 17px;
-            border-left: 3px solid var(--green);
-        }
-
-        .feature strong {
-            display: block;
-            color: var(--green-dark);
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-
-        .feature span {
-            display: block;
-            color: var(--text-light);
-            font-size: 10px;
-            line-height: 1.5;
-            font-weight: 400;
-        }
-
-
-        /* =========================
-           ONDE ENCONTRAR
-        ========================= */
-
-        .find-section {
-            background: #f5f5f1;
-            padding: 90px 30px;
-        }
-
-        .find-container {
-            max-width: 1120px;
-            margin: auto;
-        }
-
-        .locations {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin-top: 45px;
-        }
-
-        .location-card {
-            background: #ffffff;
-            padding: 30px 20px;
-
-            text-align: center;
-
-            border-radius: 4px;
-
-            transition: 0.25s;
-        }
-
-        .location-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.07);
-        }
-
-        .location-icon {
-            width: 48px;
-            height: 48px;
-
-            border-radius: 50%;
-
-            margin: 0 auto 15px;
-
-            background: var(--green-light);
-            color: var(--green-dark);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 20px;
-        }
-
-        .location-card h3 {
-            color: var(--green-dark);
-            font-size: 13px;
-            margin-bottom: 7px;
-        }
-
-        .location-card p {
-            color: var(--text-light);
-            font-size: 10px;
-            line-height: 1.5;
-        }
-
-
-        /* =========================
-           REVENDEDOR
-        ========================= */
-
-        .reseller-section {
-            padding: 100px 30px;
-            background: var(--green-dark);
-            color: #ffffff;
-        }
-
-        .reseller-container {
-            max-width: 1050px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .reseller-container span {
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #a8d96b;
-        }
-
-        .reseller-container h2 {
-            font-size: clamp(31px, 5vw, 50px);
-            line-height: 1.12;
-
-            margin: 15px auto 20px;
-            max-width: 750px;
-        }
-
-        .reseller-container > p {
-            max-width: 650px;
-            margin: auto;
-
-            font-size: 13px;
-            line-height: 1.8;
-
-            color: rgba(255,255,255,0.78);
-        }
-
-        .reseller-button {
-            display: inline-flex;
-            margin-top: 30px;
-
-            background: #ffffff;
-            color: var(--green-dark);
-
-            padding: 16px 30px;
-
-            border-radius: 4px;
-
-            font-size: 11px;
-            font-weight: 800;
-
-            transition: 0.25s;
-        }
-
-        .reseller-button:hover {
-            background: var(--green);
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-
-        /* =========================
-           COMO FUNCIONA
-        ========================= */
-
-        .how-section {
-            padding: 95px 30px;
-            background: #ffffff;
-        }
-
-        .steps {
-            max-width: 1050px;
-            margin: 55px auto 0;
-
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
-            gap: 35px;
-        }
-
-        .step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step-number {
-            width: 55px;
-            height: 55px;
-
-            margin: auto;
-
-            border-radius: 50%;
-
-            background: var(--green-light);
-            color: var(--green-dark);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 14px;
-            font-weight: 800;
-        }
 
-        .step h3 {
-            margin: 18px 0 8px;
+<style>
 
-            font-size: 12px;
-            color: var(--green-dark);
-        }
+/* =====================================================
+   RESET
+===================================================== */
 
-        .step p {
-            color: var(--text-light);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            font-size: 10px;
-            line-height: 1.6;
-        }
 
+html {
+    scroll-behavior: smooth;
+}
 
-        /* =========================
-           CTA FINAL
-        ========================= */
 
-        .final-cta {
-            background: var(--cream);
+body {
 
-            padding: 75px 30px;
+    font-family: 'Montserrat', sans-serif;
 
-            text-align: center;
-        }
+    color: #242424;
 
-        .final-cta h2 {
-            color: var(--green-dark);
+    background: #ffffff;
 
-            font-size: clamp(27px, 4vw, 39px);
+    overflow-x: hidden;
+}
 
-            margin-bottom: 13px;
-        }
 
-        .final-cta p {
-            color: var(--text-light);
+img {
+    max-width: 100%;
+    display: block;
+}
 
-            font-size: 12px;
 
-            margin-bottom: 25px;
-        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
-        /* =========================
-           FOOTER
-        ========================= */
+button {
+    font-family: inherit;
+}
 
-        footer {
-            background: var(--green);
 
-            color: #ffffff;
+/* =====================================================
+   CORES
+===================================================== */
 
-            padding: 45px 30px 30px;
-        }
+:root {
 
-        .footer-container {
-            max-width: 1120px;
+    --green: #72b52c;
 
-            margin: auto;
+    --green-dark: #315f24;
 
-            display: grid;
+    --green-light: #edf6df;
 
-            grid-template-columns:
-                1.5fr 1fr 1fr;
+    --olive: #718448;
 
-            gap: 60px;
-        }
+    --cream-green: #5d9140;
 
-        .footer-logo-text {
-            display: inline-block;
+    --blue: #577b8b;
 
-            font-size: 28px;
+    --blue-dark: #315e6d;
 
-            font-weight: 800;
+    --cream: #f7f5ed;
 
-            letter-spacing: -1.5px;
+    --text: #252525;
 
-            margin-bottom: 18px;
-        }
+    --text-light: #686868;
 
-        .footer-logo p {
-            font-size: 10px;
+    --white: #ffffff;
+}
 
-            line-height: 1.7;
 
-            max-width: 300px;
+/* =====================================================
+   HEADER
+===================================================== */
 
-            color:
-                rgba(255,255,255,0.85);
-        }
+header {
 
-        .footer-column h3 {
-            font-size: 11px;
+    width: 100%;
 
-            margin-bottom: 16px;
+    background: #ffffff;
 
-            text-transform: uppercase;
+    position: sticky;
 
-            letter-spacing: 1px;
-        }
+    top: 0;
 
-        .footer-column a {
-            display: block;
+    z-index: 1000;
 
-            font-size: 10px;
+    border-bottom:
+        1px solid rgba(0,0,0,0.06);
+}
 
-            color:
-                rgba(255,255,255,0.82);
 
-            margin-bottom: 10px;
+.header-container {
 
-            transition: 0.2s;
-        }
+    max-width: 1180px;
 
-        .footer-column a:hover {
-            color: #ffffff;
+    height: 82px;
 
-            transform:
-                translateX(3px);
-        }
+    margin: auto;
 
-        .footer-bottom {
-            max-width: 1120px;
+    padding: 0 30px;
 
-            margin: 40px auto 0;
+    display: flex;
 
-            padding-top: 20px;
+    align-items: center;
 
-            border-top:
-                1px solid
-                rgba(255,255,255,0.2);
+    justify-content: space-between;
+}
 
-            display: flex;
 
-            justify-content: space-between;
+.logo {
 
-            gap: 20px;
+    display: flex;
 
-            font-size: 9px;
+    align-items: center;
+}
 
-            color:
-                rgba(255,255,255,0.75);
-        }
 
+.logo-text {
 
-        /* =========================
-           RESPONSIVO
-        ========================= */
+    color: var(--green-dark);
 
-        @media (max-width: 900px) {
+    font-size: 28px;
 
-            nav {
-                display: none;
-            }
+    font-weight: 800;
 
-            .mobile-menu-button {
-                display: block;
-            }
+    letter-spacing: -1.5px;
 
-            .header-button {
-                display: none;
-            }
+    line-height: 1;
+}
 
-            .hero-container {
-                grid-template-columns: 1fr;
 
-                text-align: center;
+.logo-text span {
 
-                padding-top: 60px;
+    font-weight: 500;
+}
 
-                padding-bottom: 40px;
-            }
 
-            .hero-text {
-                margin: auto;
-            }
+nav {
 
-            .hero p {
-                margin-left: auto;
-                margin-right: auto;
-            }
+    display: flex;
 
-            .hero-buttons {
-                justify-content: center;
-            }
+    align-items: center;
 
-            .hero-product {
-                min-height: 430px;
-            }
+    gap: 34px;
+}
 
-            .hero-product img {
-                width: min(360px, 85%);
-            }
 
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
+nav a {
 
-            .product-card {
-                min-height: 610px;
-            }
+    font-size: 12px;
 
-            .about-container {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
+    font-weight: 500;
 
-            .about-image {
-                min-height: 380px;
-            }
+    color: #4b4b4b;
 
-            .locations {
-                grid-template-columns: repeat(2, 1fr);
-            }
+    transition: 0.25s;
 
-            .steps {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 45px 25px;
-            }
+    position: relative;
+}
 
-            .footer-container {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
 
+nav a:hover {
 
-        @media (max-width: 600px) {
+    color: var(--green-dark);
+}
 
-            .header-container {
-                height: 70px;
-                padding: 0 20px;
-            }
 
-            .logo-text {
-                font-size: 24px;
-            }
+nav a::after {
 
-            .hero {
-                min-height: auto;
-            }
+    content: "";
 
-            .hero-container {
-                padding: 55px 20px 30px;
-            }
+    position: absolute;
 
-            .hero h1 {
-                font-size: 39px;
-                letter-spacing: -1.5px;
-            }
+    left: 0;
 
-            .hero p {
-                font-size: 14px;
-            }
+    bottom: -7px;
 
-            .hero-product {
-                min-height: 360px;
-            }
+    width: 0;
 
-            .hero-product img {
-                width: 300px;
-            }
+    height: 2px;
 
-            .products-section {
-                padding-top: 65px;
-            }
+    background: var(--green);
 
-            .section-title {
-                padding: 0 20px;
-                margin-bottom: 35px;
-            }
+    transition: 0.25s;
+}
 
-            .section-title h2 {
-                font-size: 28px;
-            }
 
-            .product-card {
-                min-height: 560px;
+nav a:hover::after {
 
-                padding:
-                    35px 20px 35px;
-            }
+    width: 100%;
+}
 
-            .product-image {
-                height: 380px;
-            }
 
-            .product-image img {
-                height: 355px;
-            }
+.header-button {
 
-            .product-info h3 {
-                font-size: 23px;
-            }
+    background: var(--green);
 
-            .about-section,
-            .find-section,
-            .how-section {
-                padding: 70px 20px;
-            }
+    color: white;
 
-            .about-image {
-                min-height: 320px;
-            }
+    padding: 12px 19px;
 
-            .about-features {
-                grid-template-columns: 1fr;
-            }
+    border-radius: 4px;
 
-            .locations {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
+    font-size: 11px;
 
-            .location-card {
-                padding: 22px 12px;
-            }
+    font-weight: 700;
 
-            .steps {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
+    transition: 0.25s;
+}
 
-            .reseller-section {
-                padding: 75px 20px;
-            }
 
-            .reseller-container h2 {
-                font-size: 32px;
-            }
+.header-button:hover {
 
-            .final-cta {
-                padding: 65px 20px;
-            }
+    background: var(--green-dark);
 
-            .footer-container {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
+    transform: translateY(-1px);
+}
 
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
 
-    </style>
+.mobile-menu-button {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    color: var(--green-dark);
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 610px;
+
+    background: var(--green-light);
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.hero-container {
+
+    max-width: 1180px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.hero-text {
+
+    max-width: 570px;
+}
+
+
+.hero-tag {
+
+    display: inline-block;
+
+    color: var(--green-dark);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.06;
+
+    font-weight: 800;
+
+    color: var(--green-dark);
+
+    margin-bottom: 22px;
+
+    letter-spacing: -2px;
+}
+
+
+.hero h1 span {
+
+    color: var(--green);
+}
+
+
+.hero p {
+
+    color: #565656;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+    margin-bottom: 32px;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--green);
+
+    color: #ffffff;
+
+    padding: 15px 25px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    transition: 0.25s;
+}
+
+
+.btn-primary:hover {
+
+    background: var(--green-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.btn-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #8ca06c;
+
+    color: var(--green-dark);
+
+    padding: 14px 24px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+
+.btn-secondary:hover {
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   HERO PRODUTO
+===================================================== */
+
+.hero-product {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 470px;
+}
+
+
+.hero-product img {
+
+    width: min(410px, 90%);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,0.16)
+        );
+
+    transition: transform 0.4s;
+}
+
+
+.hero-product img:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(-1deg);
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-title span {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--green);
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+
+.section-title h2 {
+
+    font-size: clamp(28px, 4vw, 40px);
+
+    line-height: 1.15;
+
+    color: var(--green-dark);
+
+    font-weight: 700;
+}
+
+
+.section-title p {
+
+    max-width: 600px;
+
+    margin: 14px auto 0;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PRODUTOS
+===================================================== */
+
+.products-section {
+
+    padding: 80px 0 0;
+}
+
+
+.products-grid {
+
+    max-width: 1380px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+
+/* =====================================================
+   CARD DO PRODUTO
+===================================================== */
+
+.product-card {
+
+    min-height: 680px;
+
+    padding: 35px 25px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   FUNDOS DOS PRODUTOS
+===================================================== */
+
+.product-card.integral {
+
+    background: #718448;
+}
+
+
+.product-card.cream {
+
+    background: #5d9140;
+}
+
+
+.product-card.peru {
+
+    background: #577b8b;
+}
+
+
+/* =====================================================
+   ÁREA DA IMAGEM
+===================================================== */
+
+.product-image {
+
+    height: 480px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   CÍRCULO DE FUNDO
+===================================================== */
+
+/*
+   O círculo agora é centralizado matematicamente
+   dentro da área da imagem.
+*/
+
+.product-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 440px;
+
+    height: 440px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    top: 275px;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   IMAGEM DO PRODUTO
+===================================================== */
+
+.product-image img {
+
+    height: 450px;
+
+    width: auto;
+
+    max-width: 92%;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 2;
+
+    filter:
+        drop-shadow(
+            0 22px 22px rgba(0,0,0,0.22)
+        );
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.product-card:hover
+.product-image img {
+
+    transform:
+        translateY(-8px)
+        scale(1.025);
+}
+
+
+/* =====================================================
+   INFORMAÇÕES DO PRODUTO
+===================================================== */
+
+.product-info {
+
+    position: relative;
+
+    z-index: 3;
+
+    color: #ffffff;
+
+    margin-top: 5px;
+}
+
+
+.product-info h3 {
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    margin-bottom: 13px;
+}
+
+
+.product-info p {
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    max-width: 330px;
+
+    margin: auto;
+
+    opacity: 0.94;
+}
+
+
+/* =====================================================
+   SOBRE
+===================================================== */
+
+.about-section {
+
+    padding: 100px 30px;
+
+    background: #ffffff;
+}
+
+
+.about-container {
+
+    max-width: 1120px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.about-image {
+
+    background:
+        var(--green-light);
+
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+
+.about-image img {
+
+    width: 75%;
+
+    max-width: 390px;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,0.12)
+        );
+}
+
+
+.about-content span {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.about-content h2 {
+
+    color: var(--green-dark);
+
+    font-size:
+        clamp(30px, 4vw, 44px);
+
+    line-height: 1.12;
+
+    margin: 14px 0 20px;
+}
+
+
+.about-content p {
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+.about-features {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.feature {
+
+    padding-left: 17px;
+
+    border-left:
+        3px solid var(--green);
+}
+
+
+.feature strong {
+
+    display: block;
+
+    color: var(--green-dark);
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+
+.feature span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+
+/* =====================================================
+   ONDE ENCONTRAR
+===================================================== */
+
+.find-section {
+
+    background: #f5f5f1;
+
+    padding: 90px 30px;
+}
+
+
+.find-container {
+
+    max-width: 1120px;
+
+    margin: auto;
+}
+
+
+.locations {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 45px;
+}
+
+
+.location-card {
+
+    background: #ffffff;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 4px;
+
+    transition: 0.25s;
+}
+
+
+.location-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0,0,0,0.07);
+}
+
+
+.location-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    margin:
+        0 auto 15px;
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+.location-card h3 {
+
+    color:
+        var(--green-dark);
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+.location-card p {
+
+    color:
+        var(--text-light);
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   REVENDEDOR
+===================================================== */
+
+.reseller-section {
+
+    padding: 100px 30px;
+
+    background:
+        var(--green-dark);
+
+    color: #ffffff;
+}
+
+
+.reseller-container {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.reseller-container span {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a8d96b;
+}
+
+
+.reseller-container h2 {
+
+    font-size:
+        clamp(31px, 5vw, 50px);
+
+    line-height: 1.12;
+
+    margin:
+        15px auto 20px;
+
+    max-width: 750px;
+}
+
+
+.reseller-container > p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color:
+        rgba(255,255,255,0.78);
+}
+
+
+.reseller-button {
+
+    display: inline-flex;
+
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    color:
+        var(--green-dark);
+
+    padding:
+        16px 30px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    transition: 0.25s;
+}
+
+
+.reseller-button:hover {
+
+    background:
+        var(--green);
+
+    color: #ffffff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   COMO FUNCIONA
+===================================================== */
+
+.how-section {
+
+    padding:
+        95px 30px;
+
+    background:
+        #ffffff;
+}
+
+
+.steps {
+
+    max-width: 1050px;
+
+    margin:
+        55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+
+.step {
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+.step-number {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.step h3 {
+
+    margin:
+        18px 0 8px;
+
+    font-size: 12px;
+
+    color:
+        var(--green-dark);
+}
+
+
+.step p {
+
+    color:
+        var(--text-light);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+.final-cta {
+
+    background:
+        var(--cream);
+
+    padding:
+        75px 30px;
+
+    text-align: center;
+}
+
+
+.final-cta h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        clamp(27px, 4vw, 39px);
+
+    margin-bottom: 13px;
+}
+
+
+.final-cta p {
+
+    color:
+        var(--text-light);
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background:
+        var(--green);
+
+    color: #ffffff;
+
+    padding:
+        45px 30px 30px;
+}
+
+
+.footer-container {
+
+    max-width: 1120px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+
+.footer-logo-text {
+
+    display: inline-block;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 18px;
+}
+
+
+.footer-logo p {
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    max-width: 300px;
+
+    color:
+        rgba(255,255,255,0.85);
+}
+
+
+.footer-column h3 {
+
+    font-size: 11px;
+
+    margin-bottom: 16px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.footer-column a {
+
+    display: block;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,0.82);
+
+    margin-bottom: 10px;
+
+    transition: 0.2s;
+}
+
+
+.footer-column a:hover {
+
+    color: #ffffff;
+
+    transform:
+        translateX(3px);
+}
+
+
+.footer-bottom {
+
+    max-width: 1120px;
+
+    margin:
+        40px auto 0;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 9px;
+
+    color:
+        rgba(255,255,255,0.75);
+}
+
+
+/* =====================================================
+   RESPONSIVO — TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+
+    .header-button {
+        display: none;
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 60px;
+
+        padding-bottom: 40px;
+    }
+
+
+    .hero-text {
+
+        margin: auto;
+    }
+
+
+    .hero p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+
+    .hero-product {
+
+        min-height: 430px;
+    }
+
+
+    .hero-product img {
+
+        width:
+            min(360px, 85%);
+    }
+
+
+    .products-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ==========================================
+       PRODUTOS — TABLET
+    ========================================== */
+
+    .product-card {
+
+        min-height: 650px;
+
+        padding-top: 30px;
+    }
+
+
+    .product-image {
+
+        height: 455px;
+    }
+
+
+    .product-card::before {
+
+        width: 410px;
+
+        height: 410px;
+
+        top: 260px;
+    }
+
+
+    .product-image img {
+
+        height: 430px;
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .about-image {
+
+        min-height: 380px;
+    }
+
+
+    .locations {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .steps {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap:
+            45px 25px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVO — MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    .header-container {
+
+        height: 70px;
+
+        padding:
+            0 20px;
+    }
+
+
+    .logo-text {
+
+        font-size: 24px;
+    }
+
+
+    .hero {
+
+        min-height: auto;
+    }
+
+
+    .hero-container {
+
+        padding:
+            55px 20px 30px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 39px;
+
+        letter-spacing:
+            -1.5px;
+    }
+
+
+    .hero p {
+
+        font-size: 14px;
+    }
+
+
+    .hero-product {
+
+        min-height: 360px;
+    }
+
+
+    .hero-product img {
+
+        width: 300px;
+    }
+
+
+    .products-section {
+
+        padding-top: 65px;
+    }
+
+
+    .section-title {
+
+        padding:
+            0 20px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ==========================================
+       PRODUTO MOBILE — MAIOR
+    ========================================== */
+
+    .product-card {
+
+        min-height: 590px;
+
+        padding:
+            20px 15px 35px;
+    }
+
+
+    .product-image {
+
+        height: 420px;
+    }
+
+
+    /*
+       Círculo maior e perfeitamente centralizado
+       no mobile.
+    */
+
+    .product-card::before {
+
+        width: 350px;
+
+        height: 350px;
+
+        top: 230px;
+
+        left: 50%;
+
+        transform:
+            translate(-50%, -50%);
+    }
+
+
+    /*
+       Embalagem maior no celular.
+    */
+
+    .product-image img {
+
+        height: 410px;
+
+        max-width: 94%;
+    }
+
+
+    .product-info {
+
+        margin-top: 0;
+    }
+
+
+    .product-info h3 {
+
+        font-size: 23px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .product-info p {
+
+        font-size: 10px;
+
+        max-width: 310px;
+    }
+
+
+    .about-section,
+    .find-section,
+    .how-section {
+
+        padding:
+            70px 20px;
+    }
+
+
+    .about-image {
+
+        min-height: 320px;
+    }
+
+
+    .about-features {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .locations {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .location-card {
+
+        padding:
+            22px 12px;
+    }
+
+
+    .steps {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .reseller-section {
+
+        padding:
+            75px 20px;
+    }
+
+
+    .reseller-container h2 {
+
+        font-size: 32px;
+    }
+
+
+    .final-cta {
+
+        padding:
+            65px 20px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE PEQUENO
+===================================================== */
+
+@media (max-width: 380px) {
+
+
+    .product-card::before {
+
+        width: 315px;
+
+        height: 315px;
+    }
+
+
+    .product-image img {
+
+        height: 375px;
+    }
+
+
+    .product-image {
+
+        height: 395px;
+    }
+
+
+    .product-card {
+
+        min-height: 565px;
+    }
+
+}
+
+</style>
+
 </head>
 
 
 <body>
 
 
-    <!-- =========================
-         HEADER
-    ========================= -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    <header>
+<header>
 
-        <div class="header-container">
+    <div class="header-container">
 
 
-            <a href="#inicio" class="logo">
+        <a
+            href="#inicio"
+            class="logo"
+        >
 
-                <div class="logo-text">
-                    Só<span>Chef</span>
-                </div>
+            <div class="logo-text">
 
+                Só<span>Chef</span>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#inicio">
+                INÍCIO
             </a>
 
-
-            <nav>
-
-                <a href="#inicio">
-                    INÍCIO
-                </a>
-
-                <a href="#produtos">
-                    PRODUTOS
-                </a>
-
-                <a href="#onde-encontrar">
-                    ONDE ENCONTRAR
-                </a>
-
-                <a href="#revendedor">
-                    SEJA UM REVENDEDOR
-                </a>
-
-                <a href="#contato">
-                    CONTATO
-                </a>
-
-            </nav>
-
-
-            <a
-                href="#revendedor"
-                class="header-button"
-            >
-                SEJA REVENDEDOR
+            <a href="#produtos">
+                PRODUTOS
             </a>
 
+            <a href="#onde-encontrar">
+                ONDE ENCONTRAR
+            </a>
 
-            <button
-                class="mobile-menu-button"
-                aria-label="Abrir menu"
-            >
-                ☰
-            </button>
+            <a href="#revendedor">
+                SEJA UM REVENDEDOR
+            </a>
 
-        </div>
+            <a href="#contato">
+                CONTATO
+            </a>
 
-    </header>
+        </nav>
 
 
-    <!-- =========================
-         HERO
-    ========================= -->
-
-    <main>
-
-        <section
-            class="hero"
-            id="inicio"
+        <a
+            href="#revendedor"
+            class="header-button"
         >
 
-            <div class="hero-container">
+            SEJA REVENDEDOR
+
+        </a>
 
 
-                <div class="hero-text">
-
-                    <span class="hero-tag">
-                        LINHA DE SANDUÍCHES
-                    </span>
-
-
-                    <h1>
-
-                        Sabor que cabe
-                        <br>
-
-                        <span>
-                            no seu negócio.
-                        </span>
-
-                    </h1>
-
-
-                    <p>
-
-                        Sanduíches naturais prontos para
-                        consumo, desenvolvidos para levar
-                        praticidade, sabor e qualidade a
-                        diferentes pontos de venda.
-
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#produtos"
-                            class="btn-primary"
-                        >
-                            CONHEÇA NOSSOS PRODUTOS
-                        </a>
-
-
-                        <a
-                            href="#revendedor"
-                            class="btn-secondary"
-                        >
-                            QUERO REVENDER
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-product">
-
-                    <!-- Pão Integral com Frango -->
-
-                    <img
-                        src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
-                        alt="Só Chef - Pão Integral com Frango"
-                    >
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PRODUTOS
-        ========================= -->
-
-        <section
-            class="products-section"
-            id="produtos"
+        <button
+            class="mobile-menu-button"
+            aria-label="Abrir menu"
         >
 
+            ☰
 
-            <div class="section-title">
+        </button>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTEÚDO
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+
+    <div class="hero-container">
+
+
+        <div class="hero-text">
+
+
+            <span class="hero-tag">
+
+                LINHA DE SANDUÍCHES
+
+            </span>
+
+
+            <h1>
+
+                Sabor que cabe
+
+                <br>
 
                 <span>
-                    CONHEÇA NOSSA LINHA
+                    no seu negócio.
                 </span>
 
-                <h2>
-                    Sanduíches naturais
-                </h2>
+            </h1>
 
-                <p>
 
-                    Uma linha pensada para diferentes
-                    momentos, com produtos práticos
-                    e prontos para consumo.
+            <p>
 
-                </p>
+                Sanduíches naturais prontos para
+                consumo, desenvolvidos para levar
+                praticidade, sabor e qualidade a
+                diferentes pontos de venda.
 
-            </div>
+            </p>
 
 
-            <div class="products-grid">
-
-
-                <!-- PRODUTO 01
-                     PÃO INTEGRAL COM FRANGO -->
-
-                <article
-                    class="product-card integral"
-                >
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
-                            alt="Pão Integral com Frango - Só Chef"
-                        >
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <h3>
-
-                            Pão Integral
-                            <br>
-                            com Frango
-
-                        </h3>
-
-
-                        <p>
-
-                            Pão integral combinado
-                            com frango, uma opção leve,
-                            prática e saborosa para o
-                            dia a dia.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUTO 02
-                     FRANGO COM CREAM CHEESE -->
-
-                <article
-                    class="product-card cream"
-                >
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
-                            alt="Pão Tradicional com Frango e Cream Cheese - Só Chef"
-                        >
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <h3>
-
-                            Pão Tradicional
-                            <br>
-                            com Frango e
-                            <br>
-                            Cream Cheese
-
-                        </h3>
-
-
-                        <p>
-
-                            A combinação de frango
-                            e cream cheese em um
-                            sanduíche cremoso,
-                            prático e cheio de sabor.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUTO 03
-                     PEITO DE PERU -->
-
-                <article
-                    class="product-card peru"
-                >
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029179/1.png"
-                            alt="Pão Tradicional com Peito de Peru - Só Chef"
-                        >
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <h3>
-
-                            Pão Tradicional
-                            <br>
-                            com Peito de Peru
-
-                        </h3>
-
-
-                        <p>
-
-                            Uma opção leve e saborosa,
-                            perfeita para quem procura
-                            praticidade no dia a dia.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOBRE
-        ========================= -->
-
-        <section class="about-section">
-
-            <div class="about-container">
-
-
-                <div class="about-image">
-
-                    <img
-                        src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
-                        alt="Produto Só Chef"
-                    >
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <span>
-                        SOBRE A SÓ CHEF
-                    </span>
-
-
-                    <h2>
-
-                        Mais que um sanduíche.
-                        Uma solução para o seu negócio.
-
-                    </h2>
-
-
-                    <p>
-
-                        A Só Chef nasceu com uma
-                        proposta simples: oferecer
-                        sanduíches naturais práticos,
-                        saborosos e preparados para
-                        chegar a diferentes pontos
-                        de venda.
-
-                    </p>
-
-
-                    <p>
-
-                        Nossa estrutura foi pensada
-                        para trabalhar junto de
-                        revendedores que querem
-                        ampliar seu mix de produtos
-                        com uma opção pronta para
-                        consumo.
-
-                    </p>
-
-
-                    <div class="about-features">
-
-
-                        <div class="feature">
-
-                            <strong>
-                                PRODUTO PRONTO
-                            </strong>
-
-                            <span>
-
-                                Embalagem individual
-                                e pronta para exposição
-                                e venda.
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <strong>
-                                PADRÃO DE QUALIDADE
-                            </strong>
-
-                            <span>
-
-                                Uma linha desenvolvida
-                                para manter consistência
-                                e sabor.
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <strong>
-                                PRATICIDADE
-                            </strong>
-
-                            <span>
-
-                                Uma solução prática para
-                                diferentes pontos de venda.
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <strong>
-                                PARCERIA
-                            </strong>
-
-                            <span>
-
-                                Estrutura comercial pensada
-                                para nossos revendedores.
-
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ONDE ENCONTRAR
-        ========================= -->
-
-        <section
-            class="find-section"
-            id="onde-encontrar"
-        >
-
-            <div class="find-container">
-
-
-                <div class="section-title">
-
-                    <span>
-                        ONDE ENCONTRAR
-                    </span>
-
-                    <h2>
-                        A Só Chef perto de você
-                    </h2>
-
-                    <p>
-
-                        Nossos produtos podem estar
-                        presentes em diferentes tipos
-                        de estabelecimentos.
-
-                    </p>
-
-                </div>
-
-
-                <div class="locations">
-
-
-                    <div class="location-card">
-
-                        <div class="location-icon">
-                            ⛽
-                        </div>
-
-                        <h3>
-                            Postos
-                        </h3>
-
-                        <p>
-
-                            Praticidade para quem
-                            está sempre em movimento.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="location-card">
-
-                        <div class="location-icon">
-                            🏪
-                        </div>
-
-                        <h3>
-                            Conveniências
-                        </h3>
-
-                        <p>
-
-                            Produtos prontos para
-                            consumo rápido.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="location-card">
-
-                        <div class="location-icon">
-                            ☕
-                        </div>
-
-                        <h3>
-                            Cafeterias
-                        </h3>
-
-                        <p>
-
-                            Uma opção prática para
-                            acompanhar sua rotina.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="location-card">
-
-                        <div class="location-icon">
-                            🛒
-                        </div>
-
-                        <h3>
-                            Mercados
-                        </h3>
-
-                        <p>
-
-                            Mais opções para
-                            o consumidor.
-
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             REVENDEDOR
-        ========================= -->
-
-        <section
-            class="reseller-section"
-            id="revendedor"
-        >
-
-            <div class="reseller-container">
-
-
-                <span>
-                    SEJA UM REVENDEDOR
-                </span>
-
-
-                <h2>
-
-                    Leve a Só Chef
-                    para o seu ponto de venda.
-
-                </h2>
-
-
-                <p>
-
-                    Se você possui um comércio,
-                    posto, loja de conveniência,
-                    cafeteria, mercado ou outro
-                    ponto de venda, queremos
-                    conhecer seu negócio.
-
-                </p>
+            <div class="hero-buttons">
 
 
                 <a
-                    href="https://wa.me/5500000000000"
-                    class="reseller-button"
-                    target="_blank"
+                    href="#produtos"
+                    class="btn-primary"
                 >
 
-                    QUERO SER REVENDEDOR
+                    CONHEÇA NOSSOS PRODUTOS
+
+                </a>
+
+
+                <a
+                    href="#revendedor"
+                    class="btn-secondary"
+                >
+
+                    QUERO REVENDER
 
                 </a>
 
 
             </div>
 
-        </section>
+
+        </div>
 
 
-        <!-- =========================
-             COMO FUNCIONA
-        ========================= -->
-
-        <section class="how-section">
+        <div class="hero-product">
 
 
-            <div class="section-title">
+            <img
+                src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
+                alt="Só Chef - Pão Integral com Frango"
+            >
 
-                <span>
-                    COMO FUNCIONA
-                </span>
 
-                <h2>
-                    Começar é simples.
-                </h2>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUTOS
+===================================================== -->
+
+<section
+    class="products-section"
+    id="produtos"
+>
+
+
+    <div class="section-title">
+
+
+        <span>
+            CONHEÇA NOSSA LINHA
+        </span>
+
+
+        <h2>
+            Sanduíches naturais
+        </h2>
+
+
+        <p>
+
+            Uma linha pensada para diferentes
+            momentos, com produtos práticos
+            e prontos para consumo.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="products-grid">
+
+
+        <!-- =============================================
+             PRODUTO 01
+        ============================================== -->
+
+        <article
+            class="product-card integral"
+        >
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
+                    alt="Pão Integral com Frango - Só Chef"
+                >
+
+
+            </div>
+
+
+            <div class="product-info">
+
+
+                <h3>
+
+                    Pão Integral
+
+                    <br>
+
+                    com Frango
+
+                </h3>
+
 
                 <p>
 
-                    Um processo pensado para
-                    aproximar a Só Chef do
-                    seu negócio.
+                    Pão integral combinado
+                    com frango, uma opção leve,
+                    prática e saborosa para o
+                    dia a dia.
 
                 </p>
 
-            </div>
-
-
-            <div class="steps">
-
-
-                <div class="step">
-
-                    <div class="step-number">
-                        01
-                    </div>
-
-                    <h3>
-                        CADASTRE-SE
-                    </h3>
-
-                    <p>
-                        Conte para nossa equipe
-                        sobre seu negócio.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">
-                        02
-                    </div>
-
-                    <h3>
-                        FALE COM A EQUIPE
-                    </h3>
-
-                    <p>
-                        Entendemos seu ponto de
-                        venda e suas necessidades.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">
-                        03
-                    </div>
-
-                    <h3>
-                        RECEBA OS PRODUTOS
-                    </h3>
-
-                    <p>
-                        Nossa equipe orienta você
-                        sobre o abastecimento.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">
-                        04
-                    </div>
-
-                    <h3>
-                        VENDA SÓ CHEF
-                    </h3>
-
-                    <p>
-                        Ofereça uma opção prática
-                        e saborosa aos seus clientes.
-                    </p>
-
-                </div>
-
 
             </div>
 
-        </section>
+
+        </article>
 
 
-        <!-- =========================
-             CTA FINAL
-        ========================= -->
 
-        <section
-            class="final-cta"
-            id="contato"
+        <!-- =============================================
+             PRODUTO 02
+        ============================================== -->
+
+        <article
+            class="product-card cream"
         >
 
+
+            <div class="product-image">
+
+
+                <img
+                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
+                    alt="Pão Tradicional com Frango e Cream Cheese - Só Chef"
+                >
+
+
+            </div>
+
+
+            <div class="product-info">
+
+
+                <h3>
+
+                    Pão Tradicional
+
+                    <br>
+
+                    com Frango e
+
+                    <br>
+
+                    Cream Cheese
+
+                </h3>
+
+
+                <p>
+
+                    A combinação de frango
+                    e cream cheese em um
+                    sanduíche cremoso,
+                    prático e cheio de sabor.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =============================================
+             PRODUTO 03
+        ============================================== -->
+
+        <article
+            class="product-card peru"
+        >
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029179/1.png"
+                    alt="Pão Tradicional com Peito de Peru - Só Chef"
+                >
+
+
+            </div>
+
+
+            <div class="product-info">
+
+
+                <h3>
+
+                    Pão Tradicional
+
+                    <br>
+
+                    com Peito de Peru
+
+                </h3>
+
+
+                <p>
+
+                    Uma opção leve e saborosa,
+                    perfeita para quem procura
+                    praticidade no dia a dia.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section
+    class="about-section"
+>
+
+
+    <div class="about-container">
+
+
+        <div class="about-image">
+
+
+            <img
+                src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
+                alt="Produto Só Chef"
+            >
+
+
+        </div>
+
+
+        <div class="about-content">
+
+
+            <span>
+                SOBRE A SÓ CHEF
+            </span>
+
+
             <h2>
-                Quer levar a Só Chef
-                para o seu negócio?
+
+                Mais que um sanduíche.
+                Uma solução para o seu negócio.
+
             </h2>
 
+
             <p>
-                Fale com nossa equipe e saiba
-                como se tornar um revendedor.
+
+                A Só Chef nasceu com uma
+                proposta simples: oferecer
+                sanduíches naturais práticos,
+                saborosos e preparados para
+                chegar a diferentes pontos
+                de venda.
+
             </p>
+
+
+            <p>
+
+                Nossa estrutura foi pensada
+                para trabalhar junto de
+                revendedores que querem
+                ampliar seu mix de produtos
+                com uma opção pronta para
+                consumo.
+
+            </p>
+
+
+            <div class="about-features">
+
+
+                <div class="feature">
+
+                    <strong>
+                        PRODUTO PRONTO
+                    </strong>
+
+                    <span>
+
+                        Embalagem individual
+                        e pronta para exposição
+                        e venda.
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <strong>
+                        PADRÃO DE QUALIDADE
+                    </strong>
+
+                    <span>
+
+                        Uma linha desenvolvida
+                        para manter consistência
+                        e sabor.
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <strong>
+                        PRATICIDADE
+                    </strong>
+
+                    <span>
+
+                        Uma solução prática para
+                        diferentes pontos de venda.
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <strong>
+                        PARCERIA
+                    </strong>
+
+                    <span>
+
+                        Estrutura comercial pensada
+                        para nossos revendedores.
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ONDE ENCONTRAR
+===================================================== -->
+
+<section
+    class="find-section"
+    id="onde-encontrar"
+>
+
+
+    <div class="find-container">
+
+
+        <div class="section-title">
+
+
+            <span>
+                ONDE ENCONTRAR
+            </span>
+
+
+            <h2>
+                A Só Chef perto de você
+            </h2>
+
+
+            <p>
+
+                Nossos produtos podem estar
+                presentes em diferentes tipos
+                de estabelecimentos.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="locations">
+
+
+            <div class="location-card">
+
+
+                <div class="location-icon">
+                    ⛽
+                </div>
+
+
+                <h3>
+                    Postos
+                </h3>
+
+
+                <p>
+
+                    Praticidade para quem
+                    está sempre em movimento.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="location-card">
+
+
+                <div class="location-icon">
+                    🏪
+                </div>
+
+
+                <h3>
+                    Conveniências
+                </h3>
+
+
+                <p>
+
+                    Produtos prontos para
+                    consumo rápido.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="location-card">
+
+
+                <div class="location-icon">
+                    ☕
+                </div>
+
+
+                <h3>
+                    Cafeterias
+                </h3>
+
+
+                <p>
+
+                    Uma opção prática para
+                    acompanhar sua rotina.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="location-card">
+
+
+                <div class="location-icon">
+                    🛒
+                </div>
+
+
+                <h3>
+                    Mercados
+                </h3>
+
+
+                <p>
+
+                    Mais opções para
+                    o consumidor.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REVENDEDOR
+===================================================== -->
+
+<section
+    class="reseller-section"
+    id="revendedor"
+>
+
+
+    <div class="reseller-container">
+
+
+        <span>
+
+            SEJA UM REVENDEDOR
+
+        </span>
+
+
+        <h2>
+
+            Leve a Só Chef
+            para o seu ponto de venda.
+
+        </h2>
+
+
+        <p>
+
+            Se você possui um comércio,
+            posto, loja de conveniência,
+            cafeteria, mercado ou outro
+            ponto de venda, queremos
+            conhecer seu negócio.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/5500000000000"
+            class="reseller-button"
+            target="_blank"
+        >
+
+            QUERO SER REVENDEDOR
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     COMO FUNCIONA
+===================================================== -->
+
+<section
+    class="how-section"
+>
+
+
+    <div class="section-title">
+
+
+        <span>
+            COMO FUNCIONA
+        </span>
+
+
+        <h2>
+            Começar é simples.
+        </h2>
+
+
+        <p>
+
+            Um processo pensado para
+            aproximar a Só Chef do
+            seu negócio.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                01
+            </div>
+
+
+            <h3>
+                CADASTRE-SE
+            </h3>
+
+
+            <p>
+
+                Conte para nossa equipe
+                sobre seu negócio.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                02
+            </div>
+
+
+            <h3>
+                FALE COM A EQUIPE
+            </h3>
+
+
+            <p>
+
+                Entendemos seu ponto de
+                venda e suas necessidades.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                03
+            </div>
+
+
+            <h3>
+                RECEBA OS PRODUTOS
+            </h3>
+
+
+            <p>
+
+                Nossa equipe orienta você
+                sobre o abastecimento.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="step">
+
+
+            <div class="step-number">
+                04
+            </div>
+
+
+            <h3>
+                VENDA SÓ CHEF
+            </h3>
+
+
+            <p>
+
+                Ofereça uma opção prática
+                e saborosa aos seus clientes.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA FINAL
+===================================================== -->
+
+<section
+    class="final-cta"
+    id="contato"
+>
+
+
+    <h2>
+
+        Quer levar a Só Chef
+        para o seu negócio?
+
+    </h2>
+
+
+    <p>
+
+        Fale com nossa equipe e saiba
+        como se tornar um revendedor.
+
+    </p>
+
+
+    <a
+        href="https://wa.me/5500000000000"
+        class="btn-primary"
+        target="_blank"
+    >
+
+        FALAR COM A SÓ CHEF
+
+    </a>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-logo">
+
+
+            <div class="footer-logo-text">
+
+                Só Chef
+
+            </div>
+
+
+            <p>
+
+                Sanduíches naturais pensados
+                para levar sabor, praticidade
+                e qualidade para diferentes
+                pontos de venda.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+
+            <h3>
+                Navegação
+            </h3>
+
+
+            <a href="#inicio">
+                Início
+            </a>
+
+
+            <a href="#produtos">
+                Produtos
+            </a>
+
+
+            <a href="#onde-encontrar">
+                Onde Encontrar
+            </a>
+
+
+            <a href="#revendedor">
+                Seja um Revendedor
+            </a>
+
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+
+            <h3>
+                Contato
+            </h3>
+
+
+            <a href="#">
+                Instagram
+            </a>
+
 
             <a
                 href="https://wa.me/5500000000000"
-                class="btn-primary"
                 target="_blank"
             >
-                FALAR COM A SÓ CHEF
+
+                WhatsApp
+
             </a>
 
-        </section>
 
+            <a
+                href="mailto:contato@sochef.com.br"
+            >
 
-    </main>
+                contato@sochef.com.br
 
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
-    <footer>
-
-        <div class="footer-container">
-
-
-            <div class="footer-logo">
-
-                <div class="footer-logo-text">
-                    Só Chef
-                </div>
-
-                <p>
-
-                    Sanduíches naturais pensados
-                    para levar sabor, praticidade
-                    e qualidade para diferentes
-                    pontos de venda.
-
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Navegação
-                </h3>
-
-                <a href="#inicio">
-                    Início
-                </a>
-
-                <a href="#produtos">
-                    Produtos
-                </a>
-
-                <a href="#onde-encontrar">
-                    Onde Encontrar
-                </a>
-
-                <a href="#revendedor">
-                    Seja um Revendedor
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Contato
-                </h3>
-
-                <a href="#">
-                    Instagram
-                </a>
-
-                <a
-                    href="https://wa.me/5500000000000"
-                    target="_blank"
-                >
-                    WhatsApp
-                </a>
-
-                <a href="mailto:contato@sochef.com.br">
-                    contato@sochef.com.br
-                </a>
-
-            </div>
+            </a>
 
 
         </div>
 
 
-        <div class="footer-bottom">
-
-            <span>
-                © 2026 Só Chef.
-                Todos os direitos reservados.
-            </span>
-
-            <span>
-                Sanduíches naturais.
-            </span>
-
-        </div>
-
-    </footer>
+    </div>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================= -->
 
-    <script>
-
-        const mobileButton =
-            document.querySelector(
-                '.mobile-menu-button'
-            );
+    <div class="footer-bottom">
 
 
-        mobileButton.addEventListener(
+        <span>
+
+            © 2026 Só Chef.
+            Todos os direitos reservados.
+
+        </span>
+
+
+        <span>
+
+            Sanduíches naturais.
+
+        </span>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+const mobileButton =
+    document.querySelector(
+        '.mobile-menu-button'
+    );
+
+
+mobileButton.addEventListener(
+    'click',
+    function() {
+
+
+        const nav =
+            document.querySelector('nav');
+
+
+        if (
+            nav.style.display === 'flex'
+        ) {
+
+
+            nav.style.display =
+                'none';
+
+
+        } else {
+
+
+            nav.style.display =
+                'flex';
+
+
+            nav.style.position =
+                'absolute';
+
+
+            nav.style.top =
+                '70px';
+
+
+            nav.style.left =
+                '0';
+
+
+            nav.style.width =
+                '100%';
+
+
+            nav.style.background =
+                '#ffffff';
+
+
+            nav.style.padding =
+                '25px 20px';
+
+
+            nav.style.flexDirection =
+                'column';
+
+
+            nav.style.alignItems =
+                'flex-start';
+
+
+            nav.style.gap =
+                '20px';
+
+
+            nav.style.boxShadow =
+                '0 10px 20px rgba(0,0,0,0.08)';
+
+        }
+
+    }
+);
+
+
+document
+    .querySelectorAll('nav a')
+    .forEach(function(link) {
+
+
+        link.addEventListener(
             'click',
             function() {
 
-                const nav =
-                    document.querySelector('nav');
-
 
                 if (
-                    nav.style.display === 'flex'
+                    window.innerWidth <= 900
                 ) {
 
-                    nav.style.display = 'none';
 
-                } else {
+                    document.querySelector(
+                        'nav'
+                    ).style.display =
+                        'none';
 
-                    nav.style.display = 'flex';
-
-                    nav.style.position =
-                        'absolute';
-
-                    nav.style.top = '70px';
-
-                    nav.style.left = '0';
-
-                    nav.style.width = '100%';
-
-                    nav.style.background =
-                        '#ffffff';
-
-                    nav.style.padding =
-                        '25px 20px';
-
-                    nav.style.flexDirection =
-                        'column';
-
-                    nav.style.alignItems =
-                        'flex-start';
-
-                    nav.style.gap = '20px';
-
-                    nav.style.boxShadow =
-                        '0 10px 20px rgba(0,0,0,0.08)';
                 }
 
             }
         );
 
+    });
 
-        document
-            .querySelectorAll('nav a')
-            .forEach(function(link) {
 
-                link.addEventListener(
-                    'click',
-                    function() {
+</script>
 
-                        if (
-                            window.innerWidth <= 900
-                        ) {
-
-                            document.querySelector(
-                                'nav'
-                            ).style.display = 'none';
-
-                        }
-
-                    }
-                );
-
-            });
-
-    </script>
 
 </body>
+
 </html>
