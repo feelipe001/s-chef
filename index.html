@@ -333,7 +333,6 @@ nav a:hover::after {
 
 /* =====================================================
    DEGRADÊ DA HERO
-   TRANSIÇÃO PARA BRANCO
 ===================================================== */
 
 .hero::after {
@@ -406,7 +405,7 @@ nav a:hover::after {
 
 
 /* =====================================================
-   TEXTO
+   TEXTO HERO
 ===================================================== */
 
 .hero-text {
@@ -618,11 +617,6 @@ nav a:hover::after {
         visible;
 }
 
-
-/* =====================================================
-   HALO
-===================================================== */
-
 .hero-product::before {
 
     content: "";
@@ -667,11 +661,6 @@ nav a:hover::after {
         none;
 }
 
-
-/* =====================================================
-   GLOW
-===================================================== */
-
 .hero-product::after {
 
     content: "";
@@ -712,8 +701,7 @@ nav a:hover::after {
 
 
 /* =====================================================
-   IMAGEM HEADLINE
-   DESKTOP
+   HEADLINE
 ===================================================== */
 
 .hero-product img {
@@ -743,17 +731,6 @@ nav a:hover::after {
         drop-shadow(
             0 28px 35px rgba(0,0,0,0.08)
         );
-
-    /*
-       IMPORTANTE:
-
-       O fade NÃO começa no meio do corpo.
-
-       A imagem fica totalmente visível
-       até aproximadamente 82%.
-
-       Depois o fade fica forte e rápido.
-    */
 
     -webkit-mask-image:
 
@@ -794,7 +771,7 @@ nav a:hover::after {
 
 
 /* =====================================================
-   TÍTULOS DE SEÇÃO
+   TÍTULOS
 ===================================================== */
 
 .section-title {
@@ -892,11 +869,6 @@ nav a:hover::after {
         repeat(3, 1fr);
 }
 
-
-/* =====================================================
-   CARD
-===================================================== */
-
 .product-card {
 
     min-height:
@@ -942,11 +914,6 @@ nav a:hover::after {
         #577b8b;
 }
 
-
-/* =====================================================
-   CÍRCULO
-===================================================== */
-
 .product-card::before {
 
     content: "";
@@ -978,11 +945,6 @@ nav a:hover::after {
     z-index:
         0;
 }
-
-
-/* =====================================================
-   IMAGEM PRODUTO
-===================================================== */
 
 .product-image {
 
@@ -1044,11 +1006,6 @@ nav a:hover::after {
         translateY(-8px)
         scale(1.025);
 }
-
-
-/* =====================================================
-   INFO PRODUTO
-===================================================== */
 
 .product-info {
 
@@ -1287,7 +1244,7 @@ nav a:hover::after {
         #f5f5f1;
 
     padding:
-        90px 30px;
+        100px 30px;
 }
 
 .find-container {
@@ -1299,61 +1256,72 @@ nav a:hover::after {
         auto;
 }
 
-.locations {
+
+/* =====================================================
+   LOCALIZAÇÃO PRINCIPAL
+===================================================== */
+
+.location-main {
+
+    max-width:
+        850px;
+
+    margin:
+        50px auto 0;
+
+    background:
+        #ffffff;
+
+    border-radius:
+        12px;
+
+    padding:
+        35px;
 
     display:
         grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        auto 1fr auto;
 
-    gap:
-        15px;
-
-    margin-top:
-        45px;
-}
-
-.location-card {
-
-    background:
-        #ffffff;
-
-    padding:
-        30px 20px;
-
-    text-align:
+    align-items:
         center;
 
-    border-radius:
-        4px;
+    gap:
+        25px;
+
+    box-shadow:
+        0 15px 40px rgba(49,95,36,0.08);
+
+    border:
+        1px solid rgba(49,95,36,0.08);
 
     transition:
         0.25s;
 }
 
-.location-card:hover {
+.location-main:hover {
 
     transform:
-        translateY(-5px);
+        translateY(-3px);
 
     box-shadow:
-        0 15px 30px rgba(0,0,0,0.07);
+        0 20px 45px rgba(49,95,36,0.12);
 }
 
-.location-icon {
+.location-pin {
 
     width:
-        48px;
+        65px;
 
     height:
-        48px;
+        65px;
+
+    min-width:
+        65px;
 
     border-radius:
         50%;
-
-    margin:
-        0 auto 15px;
 
     background:
         var(--green-light);
@@ -1371,31 +1339,123 @@ nav a:hover::after {
         center;
 
     font-size:
-        20px;
+        28px;
 }
 
-.location-card h3 {
+.location-content h3 {
 
     color:
         var(--green-dark);
 
     font-size:
-        13px;
+        18px;
 
     margin-bottom:
-        7px;
+        8px;
 }
 
-.location-card p {
+.location-content .location-type {
+
+    display:
+        inline-block;
+
+    color:
+        var(--green);
+
+    font-size:
+        9px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1.4px;
+
+    text-transform:
+        uppercase;
+
+    margin-bottom:
+        10px;
+}
+
+.location-content p {
 
     color:
         var(--text-light);
 
     font-size:
-        10px;
+        12px;
 
     line-height:
-        1.5;
+        1.6;
+}
+
+.location-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    white-space:
+        nowrap;
+
+    background:
+        var(--green);
+
+    color:
+        #ffffff;
+
+    padding:
+        14px 20px;
+
+    border-radius:
+        5px;
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    transition:
+        0.25s;
+}
+
+.location-button:hover {
+
+    background:
+        var(--green-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   AVISO NOVOS PONTOS
+===================================================== */
+
+.location-note {
+
+    text-align:
+        center;
+
+    margin-top:
+        28px;
+
+    color:
+        #777;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.6;
 }
 
 
@@ -1821,7 +1881,6 @@ footer {
             none;
     }
 
-
     .hero {
 
         min-height:
@@ -1912,7 +1971,6 @@ footer {
             48%;
     }
 
-
     .products-grid {
 
         grid-template-columns:
@@ -1934,12 +1992,6 @@ footer {
             50px;
     }
 
-    .locations {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
     .steps {
 
         grid-template-columns:
@@ -1952,6 +2004,20 @@ footer {
             1fr 1fr;
     }
 
+    .location-main {
+
+        grid-template-columns:
+            auto 1fr;
+    }
+
+    .location-button {
+
+        grid-column:
+            2;
+
+        justify-self:
+            start;
+    }
 }
 
 
@@ -1960,11 +2026,6 @@ footer {
 ===================================================== */
 
 @media (max-width: 600px) {
-
-
-    /* =================================================
-       HEADER
-    ================================================= */
 
     .header-container {
 
@@ -1982,9 +2043,7 @@ footer {
     }
 
 
-    /* =================================================
-       HERO MOBILE
-    ================================================= */
+    /* HERO */
 
     .hero {
 
@@ -2017,11 +2076,6 @@ footer {
             );
     }
 
-
-    /* =================================================
-       FUNDO
-    ================================================= */
-
     .hero::before {
 
         width:
@@ -2035,19 +2089,7 @@ footer {
 
         top:
             100px;
-
-        background:
-            rgba(114,181,44,0.025);
-
-        filter:
-            blur(5px);
     }
-
-
-    /* =================================================
-       DEGRADÊ DA SEÇÃO
-       NÃO SOBE SOBRE O CORPO
-    ================================================= */
 
     .hero::after {
 
@@ -2070,11 +2112,6 @@ footer {
             6;
     }
 
-
-    /* =================================================
-       CONTAINER
-    ================================================= */
-
     .hero-container {
 
         width:
@@ -2092,11 +2129,6 @@ footer {
         gap:
             0;
     }
-
-
-    /* =================================================
-       TEXTO
-    ================================================= */
 
     .hero-text {
 
@@ -2155,11 +2187,6 @@ footer {
             0 auto 21px;
     }
 
-
-    /* =================================================
-       BOTÕES
-    ================================================= */
-
     .hero-buttons {
 
         width:
@@ -2192,9 +2219,7 @@ footer {
     }
 
 
-    /* =================================================
-       MODELO
-    ================================================= */
+    /* IMAGEM HERO */
 
     .hero-product {
 
@@ -2229,11 +2254,6 @@ footer {
             visible;
     }
 
-
-    /* =================================================
-       HALO MOBILE
-    ================================================= */
-
     .hero-product::before {
 
         width:
@@ -2262,15 +2282,7 @@ footer {
                 rgba(255,255,255,0.30) 68%,
                 rgba(255,255,255,0) 80%
             );
-
-        filter:
-            blur(1px);
     }
-
-
-    /* =================================================
-       GLOW MOBILE
-    ================================================= */
 
     .hero-product::after {
 
@@ -2298,14 +2310,6 @@ footer {
         z-index:
             -1;
     }
-
-
-    /* =================================================
-       IMAGEM MOBILE
-       
-       IMPORTANTE:
-       NÃO COMEÇA A SUMIR NO CORPO.
-    ================================================= */
 
     .hero-product img {
 
@@ -2338,15 +2342,6 @@ footer {
                 0 18px 25px rgba(0,0,0,0.06)
             );
 
-
-        /*
-           A imagem permanece praticamente
-           inteira até 82%.
-
-           Depois o fade fica extremamente
-           forte até desaparecer.
-        */
-
         -webkit-mask-image:
 
             linear-gradient(
@@ -2375,9 +2370,7 @@ footer {
     }
 
 
-    /* =================================================
-       PRODUTOS
-    ================================================= */
+    /* PRODUTOS */
 
     .products-section {
 
@@ -2406,7 +2399,6 @@ footer {
             12px;
     }
 
-
     .product-card {
 
         min-height:
@@ -2432,12 +2424,6 @@ footer {
 
         top:
             230px;
-
-        left:
-            50%;
-
-        transform:
-            translate(-50%, -50%);
     }
 
     .product-image img {
@@ -2449,19 +2435,10 @@ footer {
             94%;
     }
 
-    .product-info {
-
-        margin-top:
-            0;
-    }
-
     .product-info h3 {
 
         font-size:
             23px;
-
-        margin-bottom:
-            10px;
     }
 
     .product-info p {
@@ -2474,9 +2451,7 @@ footer {
     }
 
 
-    /* =================================================
-       OUTRAS SEÇÕES
-    ================================================= */
+    /* SOBRE */
 
     .about-section,
     .find-section,
@@ -2498,29 +2473,89 @@ footer {
             1fr;
     }
 
-    .locations {
+
+    /* LOCALIZAÇÃO */
+
+    .location-main {
+
+        margin-top:
+            35px;
+
+        padding:
+            24px 20px;
 
         grid-template-columns:
-            1fr 1fr;
+            auto 1fr;
 
         gap:
+            17px;
+
+        border-radius:
             10px;
     }
 
-    .location-card {
+    .location-pin {
+
+        width:
+            50px;
+
+        height:
+            50px;
+
+        min-width:
+            50px;
+
+        font-size:
+            22px;
+    }
+
+    .location-content h3 {
+
+        font-size:
+            15px;
+    }
+
+    .location-content .location-type {
+
+        font-size:
+            8px;
+
+        letter-spacing:
+            1px;
+    }
+
+    .location-content p {
+
+        font-size:
+            10px;
+    }
+
+    .location-button {
+
+        grid-column:
+            1 / -1;
+
+        width:
+            100%;
 
         padding:
-            22px 12px;
+            14px;
+
+        font-size:
+            10px;
     }
 
-    .steps {
+    .location-note {
 
-        grid-template-columns:
-            1fr;
+        font-size:
+            10px;
 
-        gap:
-            35px;
+        padding:
+            0 15px;
     }
+
+
+    /* REVENDEDOR */
 
     .reseller-section {
 
@@ -2534,11 +2569,29 @@ footer {
             32px;
     }
 
+
+    /* STEPS */
+
+    .steps {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+    }
+
+
+    /* CTA */
+
     .final-cta {
 
         padding:
             65px 20px;
     }
+
+
+    /* FOOTER */
 
     .footer-container {
 
@@ -2588,7 +2641,6 @@ footer {
             325px;
     }
 
-
     .hero-product::before {
 
         width:
@@ -2612,7 +2664,6 @@ footer {
         max-width:
             350px;
     }
-
 
     .product-card::before {
 
@@ -2878,8 +2929,6 @@ footer {
     <div class="products-grid">
 
 
-        <!-- PRODUTO 01 -->
-
         <article
             class="product-card integral"
         >
@@ -2921,8 +2970,6 @@ footer {
         </article>
 
 
-
-        <!-- PRODUTO 02 -->
 
         <article
             class="product-card cream"
@@ -2969,8 +3016,6 @@ footer {
         </article>
 
 
-
-        <!-- PRODUTO 03 -->
 
         <article
             class="product-card peru"
@@ -3168,100 +3213,69 @@ footer {
             </span>
 
             <h2>
-                A Só Chef perto de você
+                Encontre a Só Chef
             </h2>
 
             <p>
 
-                Nossos produtos podem estar
-                presentes em diferentes tipos
-                de estabelecimentos.
+                Nosso primeiro ponto de venda
+                já está aqui.
 
             </p>
 
         </div>
 
 
+        <div class="location-main">
 
-        <div class="locations">
+
+            <div class="location-pin">
+                📍
+            </div>
 
 
-            <div class="location-card">
+            <div class="location-content">
 
-                <div class="location-icon">
-                    ⛽
-                </div>
+                <span class="location-type">
+                    PONTO DE VENDA
+                </span>
 
                 <h3>
-                    Postos
+                    Posto Branca
                 </h3>
 
                 <p>
-                    Praticidade para quem
-                    está sempre em movimento.
+
+                    Localização disponível
+                    no Google Maps.
+
                 </p>
 
             </div>
 
 
+            <a
+                href="https://maps.app.goo.gl/D9VwRvTdnbuoeLCi9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="location-button"
+            >
 
-            <div class="location-card">
+                VER NO GOOGLE MAPS
 
-                <div class="location-icon">
-                    🏪
-                </div>
-
-                <h3>
-                    Conveniências
-                </h3>
-
-                <p>
-                    Produtos prontos para
-                    consumo rápido.
-                </p>
-
-            </div>
-
-
-
-            <div class="location-card">
-
-                <div class="location-icon">
-                    ☕
-                </div>
-
-                <h3>
-                    Cafeterias
-                </h3>
-
-                <p>
-                    Uma opção prática para
-                    acompanhar sua rotina.
-                </p>
-
-            </div>
-
-
-
-            <div class="location-card">
-
-                <div class="location-icon">
-                    🛒
-                </div>
-
-                <h3>
-                    Mercados
-                </h3>
-
-                <p>
-                    Mais opções para
-                    o consumidor.
-                </p>
-
-            </div>
+            </a>
 
 
         </div>
+
+
+        <p class="location-note">
+
+            Estamos ampliando nossa rede de
+            pontos de venda. Em breve, novos
+            locais estarão disponíveis por aqui.
+
+        </p>
 
     </div>
 
