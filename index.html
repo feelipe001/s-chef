@@ -10,23 +10,22 @@
 <title>Só Chef | Sanduíches Naturais</title>
 
 <meta
-    name="description"
-    content="Só Chef — sanduíches naturais prontos para consumo. Conheça nossa linha de produtos e seja um revendedor."
+name="description"
+content="Só Chef — sanduíches naturais prontos para consumo. Conheça nossa linha de produtos e seja um revendedor."
 >
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin
 >
 
 <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+rel="stylesheet"
 >
-
 
 <style>
 
@@ -46,7 +45,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #242424;
+    color: #252525;
     background: #ffffff;
     overflow-x: hidden;
 }
@@ -90,7 +89,7 @@ button {
 
     --text: #252525;
 
-    --text-light: #686868;
+    --text-light: #666666;
 
     --white: #ffffff;
 }
@@ -113,14 +112,14 @@ header {
     z-index: 1000;
 
     border-bottom:
-        1px solid rgba(0,0,0,0.04);
+        1px solid rgba(0,0,0,0.05);
 }
 
 .header-container {
 
     max-width: 1180px;
 
-    height: 82px;
+    height: 84px;
 
     margin: auto;
 
@@ -133,18 +132,11 @@ header {
     justify-content: space-between;
 }
 
-.logo {
-
-    display: flex;
-
-    align-items: center;
-}
-
 .logo-text {
 
     color: var(--green-dark);
 
-    font-size: 28px;
+    font-size: 30px;
 
     font-weight: 800;
 
@@ -164,14 +156,14 @@ nav {
 
     align-items: center;
 
-    gap: 34px;
+    gap: 32px;
 }
 
 nav a {
 
-    font-size: 12px;
+    font-size: 13px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     color: #4b4b4b;
 
@@ -182,8 +174,7 @@ nav a {
 
 nav a:hover {
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 }
 
 nav a::after {
@@ -194,14 +185,13 @@ nav a::after {
 
     left: 0;
 
-    bottom: -7px;
+    bottom: -8px;
 
     width: 0;
 
     height: 2px;
 
-    background:
-        var(--green);
+    background: var(--green);
 
     transition: 0.25s;
 }
@@ -213,35 +203,26 @@ nav a:hover::after {
 
 .header-button {
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    padding:
-        12px 19px;
+    padding: 13px 20px;
 
-    border-radius:
-        4px;
+    border-radius: 5px;
 
-    font-size:
-        11px;
+    font-size: 12px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .header-button:hover {
 
-    background:
-        var(--green-dark);
+    background: var(--green-dark);
 
-    transform:
-        translateY(-1px);
+    transform: translateY(-1px);
 }
 
 .mobile-menu-button {
@@ -252,10 +233,9 @@ nav a:hover::after {
 
     background: transparent;
 
-    font-size: 25px;
+    font-size: 29px;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
     cursor: pointer;
 }
@@ -292,17 +272,10 @@ nav a:hover::after {
             #ffffff 100%
         );
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 }
-
-
-/* =====================================================
-   ELEMENTO DE FUNDO
-===================================================== */
 
 .hero::before {
 
@@ -323,17 +296,10 @@ nav a:hover::after {
     background:
         rgba(114,181,44,0.04);
 
-    filter:
-        blur(5px);
+    filter: blur(5px);
 
-    pointer-events:
-        none;
+    pointer-events: none;
 }
-
-
-/* =====================================================
-   DEGRADÊ DA HERO
-===================================================== */
 
 .hero::after {
 
@@ -361,11 +327,9 @@ nav a:hover::after {
             #ffffff 100%
         );
 
-    z-index:
-        4;
+    z-index: 4;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 }
 
 
@@ -381,211 +345,154 @@ nav a:hover::after {
 
     margin: auto;
 
-    padding:
-        50px 45px 0;
+    padding: 50px 45px 0;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        0.82fr 1.18fr;
+    grid-template-columns: 0.82fr 1.18fr;
 
-    align-items:
-        center;
+    align-items: center;
 
-    gap:
-        10px;
+    gap: 10px;
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        5;
+    z-index: 5;
 }
 
 
 /* =====================================================
-   TEXTO HERO
+   HERO TEXTO
 ===================================================== */
 
 .hero-text {
 
-    max-width:
-        570px;
+    max-width: 570px;
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        8;
+    z-index: 8;
 }
 
 .hero-tag {
 
-    display:
-        inline-block;
+    display: inline-block;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-size:
-        11px;
+    font-size: 13px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        2px;
+    letter-spacing: 2px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 
-    margin-bottom:
-        18px;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
 
-    font-size:
-        clamp(42px, 5vw, 66px);
+    font-size: clamp(45px, 5vw, 68px);
 
-    line-height:
-        1.05;
+    line-height: 1.04;
 
-    font-weight:
-        800;
+    font-weight: 800;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    margin-bottom:
-        22px;
+    margin-bottom: 24px;
 
-    letter-spacing:
-        -2.5px;
+    letter-spacing: -2.8px;
 }
 
 .hero h1 span {
 
-    color:
-        var(--green);
+    color: var(--green);
 }
 
 .hero p {
 
-    color:
-        #565656;
+    color: #565656;
 
-    font-size:
-        17px;
+    font-size: 18px;
 
-    line-height:
-        1.7;
+    line-height: 1.7;
 
-    max-width:
-        500px;
+    max-width: 510px;
 
-    margin-bottom:
-        32px;
+    margin-bottom: 34px;
 }
 
 .hero-buttons {
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    gap:
-        13px;
+    gap: 14px;
 
-    flex-wrap:
-        wrap;
+    flex-wrap: wrap;
 }
 
 .btn-primary {
 
-    display:
-        inline-flex;
+    display: inline-flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    padding:
-        15px 25px;
+    padding: 16px 26px;
 
-    border-radius:
-        4px;
+    border-radius: 5px;
 
-    font-size:
-        11px;
+    font-size: 12px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        0.3px;
+    letter-spacing: 0.3px;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .btn-primary:hover {
 
-    background:
-        var(--green-dark);
+    background: var(--green-dark);
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .btn-secondary {
 
-    display:
-        inline-flex;
+    display: inline-flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    border:
-        1px solid #8ca06c;
+    border: 1px solid #8ca06c;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    padding:
-        14px 24px;
+    padding: 15px 25px;
 
-    border-radius:
-        4px;
+    border-radius: 5px;
 
-    font-size:
-        11px;
+    font-size: 12px;
 
-    font-weight:
-        600;
+    font-weight: 600;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .btn-secondary:hover {
 
-    background:
-        #ffffff;
+    background: #ffffff;
 }
 
 
@@ -595,52 +502,38 @@ nav a:hover::after {
 
 .hero-product {
 
-    min-height:
-        680px;
+    min-height: 680px;
 
-    position:
-        relative;
+    position: relative;
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    isolation:
-        isolate;
+    isolation: isolate;
 
-    overflow:
-        visible;
+    overflow: visible;
 }
 
 .hero-product::before {
 
     content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        720px;
+    width: 720px;
 
-    height:
-        720px;
+    height: 720px;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    left:
-        53%;
+    left: 53%;
 
-    top:
-        48%;
+    top: 48%;
 
-    transform:
-        translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     background:
 
@@ -654,78 +547,53 @@ nav a:hover::after {
             rgba(255,255,255,0) 78%
         );
 
-    z-index:
-        -2;
+    z-index: -2;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 }
 
 .hero-product::after {
 
     content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        450px;
+    width: 450px;
 
-    height:
-        450px;
+    height: 450px;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    left:
-        54%;
+    left: 54%;
 
-    top:
-        46%;
+    top: 46%;
 
-    transform:
-        translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-    background:
-        rgba(255,255,255,0.58);
+    background: rgba(255,255,255,0.58);
 
-    filter:
-        blur(45px);
+    filter: blur(45px);
 
-    z-index:
-        -1;
+    z-index: -1;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 }
-
-
-/* =====================================================
-   HEADLINE
-===================================================== */
 
 .hero-product img {
 
-    width:
-        min(720px, 100%);
+    width: min(720px, 100%);
 
-    max-width:
-        720px;
+    max-width: 720px;
 
-    height:
-        auto;
+    height: auto;
 
-    object-fit:
-        contain;
+    object-fit: contain;
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        3;
+    z-index: 3;
 
-    transform:
-        translateY(8px);
+    transform: translateY(8px);
 
     filter:
         drop-shadow(
@@ -757,87 +625,59 @@ nav a:hover::after {
             rgba(0,0,0,0.08) 97%,
             transparent 100%
         );
-
-    transition:
-        transform 0.45s ease;
-}
-
-.hero-product img:hover {
-
-    transform:
-        translateY(1px)
-        scale(1.01);
 }
 
 
 /* =====================================================
-   TÍTULOS
+   TÍTULOS DAS SEÇÕES
 ===================================================== */
 
 .section-title {
 
-    text-align:
-        center;
+    text-align: center;
 
-    margin-bottom:
-        45px;
+    margin-bottom: 50px;
 }
 
 .section-title span {
 
-    display:
-        block;
+    display: block;
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        2px;
+    letter-spacing: 2.2px;
 
-    color:
-        var(--green);
+    color: var(--green);
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 
-    margin-bottom:
-        10px;
+    margin-bottom: 12px;
 }
 
 .section-title h2 {
 
-    font-size:
-        clamp(28px, 4vw, 40px);
+    font-size: clamp(32px, 4vw, 43px);
 
-    line-height:
-        1.15;
+    line-height: 1.15;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-weight:
-        700;
+    font-weight: 700;
 }
 
 .section-title p {
 
-    max-width:
-        600px;
+    max-width: 650px;
 
-    margin:
-        14px auto 0;
+    margin: 16px auto 0;
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        13px;
+    font-size: 15px;
 
-    line-height:
-        1.7;
+    line-height: 1.75;
 }
 
 
@@ -847,156 +687,117 @@ nav a:hover::after {
 
 .products-section {
 
-    padding:
-        80px 0 0;
+    padding: 90px 0 0;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 }
 
 .products-grid {
 
-    max-width:
-        1380px;
+    max-width: 1380px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .product-card {
 
-    min-height:
-        680px;
+    min-height: 680px;
 
-    padding:
-        35px 25px 45px;
+    padding: 35px 25px 50px;
 
-    display:
-        flex;
+    display: flex;
 
-    flex-direction:
-        column;
+    flex-direction: column;
 
-    align-items:
-        center;
+    align-items: center;
 
-    text-align:
-        center;
+    text-align: center;
 
-    position:
-        relative;
+    position: relative;
 
-    overflow:
-        hidden;
+    overflow: hidden;
 }
 
 .product-card.integral {
 
-    background:
-        #718448;
+    background: #718448;
 }
 
 .product-card.cream {
 
-    background:
-        #5d9140;
+    background: #5d9140;
 }
 
 .product-card.peru {
 
-    background:
-        #577b8b;
+    background: #577b8b;
 }
 
 .product-card::before {
 
     content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        440px;
+    width: 460px;
 
-    height:
-        440px;
+    height: 460px;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
     background:
         rgba(255,255,255,0.10);
 
-    top:
-        275px;
+    top: 275px;
 
-    left:
-        50%;
+    left: 50%;
 
-    transform:
-        translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-    z-index:
-        0;
+    z-index: 0;
 }
 
 .product-image {
 
-    height:
-        480px;
+    height: 480px;
 
-    width:
-        100%;
+    width: 100%;
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        1;
+    z-index: 1;
 }
 
 .product-image img {
 
-    height:
-        450px;
+    height: 450px;
 
-    width:
-        auto;
+    width: auto;
 
-    max-width:
-        92%;
+    max-width: 94%;
 
-    object-fit:
-        contain;
+    object-fit: contain;
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        2;
+    z-index: 2;
 
     filter:
         drop-shadow(
             0 22px 22px rgba(0,0,0,0.22)
         );
 
-    transition:
-        transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .product-card:hover
@@ -1009,50 +810,37 @@ nav a:hover::after {
 
 .product-info {
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        3;
+    z-index: 3;
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    margin-top:
-        5px;
+    margin-top: 5px;
 }
 
 .product-info h3 {
 
-    font-size:
-        25px;
+    font-size: 27px;
 
-    line-height:
-        1.2;
+    line-height: 1.22;
 
-    font-weight:
-        600;
+    font-weight: 600;
 
-    margin-bottom:
-        13px;
+    margin-bottom: 15px;
 }
 
 .product-info p {
 
-    font-size:
-        11px;
+    font-size: 14px;
 
-    line-height:
-        1.6;
+    line-height: 1.65;
 
-    max-width:
-        330px;
+    max-width: 350px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    opacity:
-        0.94;
+    opacity: 0.96;
 }
 
 
@@ -1062,65 +850,48 @@ nav a:hover::after {
 
 .about-section {
 
-    padding:
-        100px 30px;
+    padding: 110px 30px;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 }
 
 .about-container {
 
-    max-width:
-        1120px;
+    max-width: 1120px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    gap:
-        80px;
+    gap: 80px;
 
-    align-items:
-        center;
+    align-items: center;
 }
 
 .about-image {
 
-    background:
-        var(--green-light);
+    background: var(--green-light);
 
-    min-height:
-        450px;
+    min-height: 450px;
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    border-radius:
-        4px;
+    border-radius: 6px;
 
-    overflow:
-        hidden;
+    overflow: hidden;
 }
 
 .about-image img {
 
-    width:
-        75%;
+    width: 75%;
 
-    max-width:
-        390px;
+    max-width: 390px;
 
     filter:
         drop-shadow(
@@ -1130,71 +901,53 @@ nav a:hover::after {
 
 .about-content span {
 
-    color:
-        var(--green);
+    color: var(--green);
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        2px;
+    letter-spacing: 2px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 }
 
 .about-content h2 {
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-size:
-        clamp(30px, 4vw, 44px);
+    font-size: clamp(32px, 4vw, 45px);
 
-    line-height:
-        1.12;
+    line-height: 1.12;
 
-    margin:
-        14px 0 20px;
+    margin: 15px 0 22px;
 }
 
 .about-content p {
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        13px;
+    font-size: 15px;
 
-    line-height:
-        1.8;
+    line-height: 1.8;
 
-    margin-bottom:
-        18px;
+    margin-bottom: 19px;
 }
 
 .about-features {
 
-    margin-top:
-        30px;
+    margin-top: 32px;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    gap:
-        20px;
+    gap: 22px;
 }
 
 .feature {
 
-    padding-left:
-        17px;
+    padding-left: 18px;
 
     border-left:
         3px solid var(--green);
@@ -1202,35 +955,26 @@ nav a:hover::after {
 
 .feature strong {
 
-    display:
-        block;
+    display: block;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-size:
-        12px;
+    font-size: 12px;
 
-    margin-bottom:
-        5px;
+    margin-bottom: 6px;
 }
 
 .feature span {
 
-    display:
-        block;
+    display: block;
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    line-height:
-        1.5;
+    line-height: 1.6;
 
-    font-weight:
-        400;
+    font-weight: 400;
 }
 
 
@@ -1240,55 +984,37 @@ nav a:hover::after {
 
 .find-section {
 
-    background:
-        #f5f5f1;
+    background: #f5f5f1;
 
-    padding:
-        100px 30px;
+    padding: 105px 30px;
 }
 
 .find-container {
 
-    max-width:
-        1120px;
+    max-width: 1120px;
 
-    margin:
-        auto;
+    margin: auto;
 }
-
-
-/* =====================================================
-   LOCALIZAÇÃO PRINCIPAL
-===================================================== */
 
 .location-main {
 
-    max-width:
-        850px;
+    max-width: 900px;
 
-    margin:
-        50px auto 0;
+    margin: 55px auto 0;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 
-    border-radius:
-        12px;
+    border-radius: 14px;
 
-    padding:
-        35px;
+    padding: 38px;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
 
-    align-items:
-        center;
+    align-items: center;
 
-    gap:
-        25px;
+    gap: 28px;
 
     box-shadow:
         0 15px 40px rgba(49,95,36,0.08);
@@ -1296,14 +1022,12 @@ nav a:hover::after {
     border:
         1px solid rgba(49,95,36,0.08);
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .location-main:hover {
 
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
         0 20px 45px rgba(49,95,36,0.12);
@@ -1311,151 +1035,105 @@ nav a:hover::after {
 
 .location-pin {
 
-    width:
-        65px;
+    width: 68px;
 
-    height:
-        65px;
+    height: 68px;
 
-    min-width:
-        65px;
+    min-width: 68px;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    background:
-        var(--green-light);
+    background: var(--green-light);
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    font-size:
-        28px;
+    font-size: 30px;
 }
 
 .location-content h3 {
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-size:
-        18px;
+    font-size: 21px;
 
-    margin-bottom:
-        8px;
+    margin-bottom: 9px;
 }
 
 .location-content .location-type {
 
-    display:
-        inline-block;
+    display: inline-block;
 
-    color:
-        var(--green);
+    color: var(--green);
 
-    font-size:
-        9px;
+    font-size: 11px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        1.4px;
+    letter-spacing: 1.5px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 
-    margin-bottom:
-        10px;
+    margin-bottom: 10px;
 }
 
 .location-content p {
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        12px;
+    font-size: 14px;
 
-    line-height:
-        1.6;
+    line-height: 1.65;
 }
 
 .location-button {
 
-    display:
-        inline-flex;
+    display: inline-flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    white-space:
-        nowrap;
+    white-space: nowrap;
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    padding:
-        14px 20px;
+    padding: 15px 22px;
 
-    border-radius:
-        5px;
+    border-radius: 6px;
 
-    font-size:
-        10px;
+    font-size: 11px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .location-button:hover {
 
-    background:
-        var(--green-dark);
+    background: var(--green-dark);
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
-
-
-/* =====================================================
-   AVISO NOVOS PONTOS
-===================================================== */
 
 .location-note {
 
-    text-align:
-        center;
+    text-align: center;
 
-    margin-top:
-        28px;
+    margin-top: 30px;
 
-    color:
-        #777;
+    color: #777;
 
-    font-size:
-        11px;
+    font-size: 13px;
 
-    line-height:
-        1.6;
+    line-height: 1.7;
 }
 
 
@@ -1465,119 +1143,87 @@ nav a:hover::after {
 
 .reseller-section {
 
-    padding:
-        100px 30px;
+    padding: 105px 30px;
 
-    background:
-        var(--green-dark);
+    background: var(--green-dark);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 }
 
 .reseller-container {
 
-    max-width:
-        1050px;
+    max-width: 1050px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    text-align:
-        center;
+    text-align: center;
 }
 
 .reseller-container span {
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    font-weight:
-        700;
+    font-weight: 700;
 
-    letter-spacing:
-        2px;
+    letter-spacing: 2.2px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 
-    color:
-        #a8d96b;
+    color: #a8d96b;
 }
 
 .reseller-container h2 {
 
-    font-size:
-        clamp(31px, 5vw, 50px);
+    font-size: clamp(34px, 5vw, 52px);
 
-    line-height:
-        1.12;
+    line-height: 1.12;
 
-    margin:
-        15px auto 20px;
+    margin: 17px auto 22px;
 
-    max-width:
-        750px;
+    max-width: 780px;
 }
 
 .reseller-container > p {
 
-    max-width:
-        650px;
+    max-width: 680px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    font-size:
-        13px;
+    font-size: 15px;
 
-    line-height:
-        1.8;
+    line-height: 1.8;
 
-    color:
-        rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.82);
 }
 
 .reseller-button {
 
-    display:
-        inline-flex;
+    display: inline-flex;
 
-    margin-top:
-        30px;
+    margin-top: 32px;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    padding:
-        16px 30px;
+    padding: 17px 31px;
 
-    border-radius:
-        4px;
+    border-radius: 5px;
 
-    font-size:
-        11px;
+    font-size: 12px;
 
-    font-weight:
-        800;
+    font-weight: 800;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .reseller-button:hover {
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
 
 
@@ -1587,95 +1233,70 @@ nav a:hover::after {
 
 .how-section {
 
-    padding:
-        95px 30px;
+    padding: 100px 30px;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 }
 
 .steps {
 
-    max-width:
-        1050px;
+    max-width: 1050px;
 
-    margin:
-        55px auto 0;
+    margin: 60px auto 0;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap:
-        35px;
+    gap: 35px;
 }
 
 .step {
 
-    text-align:
-        center;
+    text-align: center;
 }
 
 .step-number {
 
-    width:
-        55px;
+    width: 60px;
 
-    height:
-        55px;
+    height: 60px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    background:
-        var(--green-light);
+    background: var(--green-light);
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    font-size:
-        14px;
+    font-size: 15px;
 
-    font-weight:
-        800;
+    font-weight: 800;
 }
 
 .step h3 {
 
-    margin:
-        18px 0 8px;
+    margin: 19px 0 9px;
 
-    font-size:
-        12px;
+    font-size: 13px;
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 }
 
 .step p {
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    line-height:
-        1.6;
+    line-height: 1.7;
 }
 
 
@@ -1685,38 +1306,29 @@ nav a:hover::after {
 
 .final-cta {
 
-    background:
-        var(--cream);
+    background: var(--cream);
 
-    padding:
-        75px 30px;
+    padding: 85px 30px;
 
-    text-align:
-        center;
+    text-align: center;
 }
 
 .final-cta h2 {
 
-    color:
-        var(--green-dark);
+    color: var(--green-dark);
 
-    font-size:
-        clamp(27px, 4vw, 39px);
+    font-size: clamp(30px, 4vw, 42px);
 
-    margin-bottom:
-        13px;
+    margin-bottom: 15px;
 }
 
 .final-cta p {
 
-    color:
-        var(--text-light);
+    color: var(--text-light);
 
-    font-size:
-        12px;
+    font-size: 14px;
 
-    margin-bottom:
-        25px;
+    margin-bottom: 27px;
 }
 
 
@@ -1726,137 +1338,101 @@ nav a:hover::after {
 
 footer {
 
-    background:
-        var(--green);
+    background: var(--green);
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    padding:
-        45px 30px 30px;
+    padding: 50px 30px 32px;
 }
 
 .footer-container {
 
-    max-width:
-        1120px;
+    max-width: 1120px;
 
-    margin:
-        auto;
+    margin: auto;
 
-    display:
-        grid;
+    display: grid;
 
-    grid-template-columns:
-        1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
 
-    gap:
-        60px;
+    gap: 60px;
 }
 
 .footer-logo-text {
 
-    display:
-        inline-block;
+    display: inline-block;
 
-    font-size:
-        28px;
+    font-size: 30px;
 
-    font-weight:
-        800;
+    font-weight: 800;
 
-    letter-spacing:
-        -1.5px;
+    letter-spacing: -1.5px;
 
-    margin-bottom:
-        18px;
+    margin-bottom: 19px;
 }
 
 .footer-logo p {
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    line-height:
-        1.7;
+    line-height: 1.75;
 
-    max-width:
-        300px;
+    max-width: 320px;
 
-    color:
-        rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.88);
 }
 
 .footer-column h3 {
 
-    font-size:
-        11px;
+    font-size: 12px;
 
-    margin-bottom:
-        16px;
+    margin-bottom: 18px;
 
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 
-    letter-spacing:
-        1px;
+    letter-spacing: 1px;
 }
 
 .footer-column a {
 
-    display:
-        block;
+    display: block;
 
-    font-size:
-        10px;
+    font-size: 12px;
 
-    color:
-        rgba(255,255,255,0.82);
+    color: rgba(255,255,255,0.85);
 
-    margin-bottom:
-        10px;
+    margin-bottom: 12px;
 
-    transition:
-        0.2s;
+    transition: 0.2s;
 }
 
 .footer-column a:hover {
 
-    color:
-        #ffffff;
+    color: #ffffff;
 
-    transform:
-        translateX(3px);
+    transform: translateX(3px);
 }
 
 .footer-bottom {
 
-    max-width:
-        1120px;
+    max-width: 1120px;
 
-    margin:
-        40px auto 0;
+    margin: 42px auto 0;
 
-    padding-top:
-        20px;
+    padding-top: 22px;
 
     border-top:
         1px solid rgba(255,255,255,0.2);
 
-    display:
-        flex;
+    display: flex;
 
-    justify-content:
-        space-between;
+    justify-content: space-between;
 
-    gap:
-        20px;
+    gap: 20px;
 
-    font-size:
-        9px;
+    font-size: 10px;
 
-    color:
-        rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.78);
 }
 
 
@@ -1867,96 +1443,74 @@ footer {
 @media (max-width: 1000px) {
 
     nav {
-        display:
-            none;
+        display: none;
     }
 
     .mobile-menu-button {
-        display:
-            block;
+        display: block;
     }
 
     .header-button {
-        display:
-            none;
+        display: none;
     }
 
     .hero {
-
-        min-height:
-            auto;
+        min-height: auto;
     }
 
     .hero-container {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
-        text-align:
-            center;
+        text-align: center;
 
-        padding:
-            60px 25px 0;
+        padding: 65px 25px 0;
 
-        gap:
-            0;
+        gap: 0;
     }
 
     .hero-text {
 
-        margin:
-            auto;
+        margin: auto;
 
-        max-width:
-            620px;
+        max-width: 650px;
     }
 
     .hero p {
 
-        margin-left:
-            auto;
+        margin-left: auto;
 
-        margin-right:
-            auto;
+        margin-right: auto;
     }
 
     .hero-buttons {
 
-        justify-content:
-            center;
+        justify-content: center;
     }
 
     .hero-product {
 
-        min-height:
-            570px;
+        min-height: 600px;
 
-        margin-top:
-            -5px;
+        margin-top: -5px;
     }
 
     .hero-product img {
 
-        width:
-            min(620px, 90vw);
+        width: min(650px, 92vw);
 
-        max-width:
-            620px;
+        max-width: 650px;
     }
 
     .hero-product::before {
 
-        width:
-            620px;
+        width: 650px;
 
-        height:
-            620px;
+        height: 650px;
 
-        left:
-            50%;
+        left: 50%;
 
-        top:
-            50%;
+        top: 50%;
 
         transform:
             translate(-50%, -50%);
@@ -1964,59 +1518,48 @@ footer {
 
     .hero-product::after {
 
-        left:
-            50%;
+        left: 50%;
 
-        top:
-            48%;
+        top: 48%;
     }
 
     .products-grid {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
     .product-card {
 
-        min-height:
-            650px;
+        min-height: 680px;
     }
 
     .about-container {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
-        gap:
-            50px;
+        gap: 55px;
     }
 
     .steps {
 
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-container {
 
-        grid-template-columns:
-            1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .location-main {
 
-        grid-template-columns:
-            auto 1fr;
+        grid-template-columns: auto 1fr;
     }
 
     .location-button {
 
-        grid-column:
-            2;
+        grid-column: 2;
 
-        justify-self:
-            start;
+        justify-self: start;
     }
 }
 
@@ -2029,17 +1572,19 @@ footer {
 
     .header-container {
 
-        height:
-            70px;
+        height: 72px;
 
-        padding:
-            0 20px;
+        padding: 0 20px;
     }
 
     .logo-text {
 
-        font-size:
-            24px;
+        font-size: 25px;
+    }
+
+    .mobile-menu-button {
+
+        font-size: 28px;
     }
 
 
@@ -2047,14 +1592,11 @@ footer {
 
     .hero {
 
-        min-height:
-            auto;
+        min-height: auto;
 
-        display:
-            block;
+        display: block;
 
-        overflow:
-            hidden;
+        overflow: hidden;
 
         background:
 
@@ -2078,23 +1620,18 @@ footer {
 
     .hero::before {
 
-        width:
-            500px;
+        width: 500px;
 
-        height:
-            500px;
+        height: 500px;
 
-        right:
-            -250px;
+        right: -250px;
 
-        top:
-            100px;
+        top: 100px;
     }
 
     .hero::after {
 
-        height:
-            185px;
+        height: 185px;
 
         background:
 
@@ -2108,114 +1645,85 @@ footer {
                 #ffffff 100%
             );
 
-        z-index:
-            6;
+        z-index: 6;
     }
 
     .hero-container {
 
-        width:
-            100%;
+        width: 100%;
 
-        padding:
-            38px 18px 0;
+        padding: 42px 18px 0;
 
-        display:
-            flex;
+        display: flex;
 
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        gap:
-            0;
+        gap: 0;
     }
 
     .hero-text {
 
-        width:
-            100%;
+        width: 100%;
 
-        max-width:
-            100%;
+        max-width: 100%;
 
-        text-align:
-            center;
+        text-align: center;
     }
 
     .hero-tag {
 
-        font-size:
-            9px;
+        font-size: 10px;
 
-        letter-spacing:
-            1.6px;
+        letter-spacing: 1.7px;
 
-        margin-bottom:
-            13px;
+        margin-bottom: 14px;
     }
 
     .hero h1 {
 
-        font-size:
-            36px;
+        font-size: 38px;
 
-        line-height:
-            1.08;
+        line-height: 1.08;
 
-        letter-spacing:
-            -1.5px;
+        letter-spacing: -1.7px;
 
-        margin-bottom:
-            16px;
+        margin-bottom: 17px;
     }
 
     .hero p {
 
-        width:
-            100%;
+        width: 100%;
 
-        max-width:
-            350px;
+        max-width: 360px;
 
-        font-size:
-            13px;
+        font-size: 15px;
 
-        line-height:
-            1.65;
+        line-height: 1.7;
 
-        margin:
-            0 auto 21px;
+        margin: 0 auto 24px;
     }
 
     .hero-buttons {
 
-        width:
-            100%;
+        width: 100%;
 
-        display:
-            flex;
+        display: flex;
 
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        gap:
-            9px;
+        gap: 10px;
 
-        align-items:
-            stretch;
+        align-items: stretch;
     }
 
     .btn-primary,
     .btn-secondary {
 
-        width:
-            100%;
+        width: 100%;
 
-        padding:
-            14px 16px;
+        padding: 15px 16px;
 
-        font-size:
-            10px;
+        font-size: 11px;
     }
 
 
@@ -2223,50 +1731,36 @@ footer {
 
     .hero-product {
 
-        width:
-            100%;
+        width: 100%;
 
-        min-height:
-            0;
+        min-height: 0;
 
-        height:
-            auto;
+        height: auto;
 
-        margin:
-            0;
+        margin: 0;
 
-        padding:
-            0;
+        padding: 0;
 
-        display:
-            flex;
+        display: flex;
 
-        align-items:
-            flex-end;
+        align-items: flex-end;
 
-        justify-content:
-            center;
+        justify-content: center;
 
-        position:
-            relative;
+        position: relative;
 
-        overflow:
-            visible;
+        overflow: visible;
     }
 
     .hero-product::before {
 
-        width:
-            470px;
+        width: 470px;
 
-        height:
-            470px;
+        height: 470px;
 
-        left:
-            50%;
+        left: 50%;
 
-        top:
-            53%;
+        top: 53%;
 
         transform:
             translate(-50%, -50%);
@@ -2286,17 +1780,13 @@ footer {
 
     .hero-product::after {
 
-        width:
-            330px;
+        width: 330px;
 
-        height:
-            330px;
+        height: 330px;
 
-        left:
-            50%;
+        left: 50%;
 
-        top:
-            47%;
+        top: 47%;
 
         transform:
             translate(-50%, -50%);
@@ -2304,38 +1794,28 @@ footer {
         background:
             rgba(255,255,255,0.64);
 
-        filter:
-            blur(42px);
+        filter: blur(42px);
 
-        z-index:
-            -1;
+        z-index: -1;
     }
 
     .hero-product img {
 
-        width:
-            100%;
+        width: 100%;
 
-        max-width:
-            395px;
+        max-width: 395px;
 
-        height:
-            auto;
+        height: auto;
 
-        margin:
-            0 auto;
+        margin: 0 auto;
 
-        object-fit:
-            contain;
+        object-fit: contain;
 
-        position:
-            relative;
+        position: relative;
 
-        z-index:
-            4;
+        z-index: 4;
 
-        transform:
-            translateY(4px);
+        transform: translateY(4px);
 
         filter:
             drop-shadow(
@@ -2374,80 +1854,77 @@ footer {
 
     .products-section {
 
-        padding-top:
-            65px;
+        padding-top: 70px;
     }
 
     .section-title {
 
-        padding:
-            0 20px;
+        padding: 0 20px;
 
-        margin-bottom:
-            35px;
+        margin-bottom: 38px;
+    }
+
+    .section-title span {
+
+        font-size: 10px;
+
+        letter-spacing: 1.8px;
     }
 
     .section-title h2 {
 
-        font-size:
-            28px;
+        font-size: 30px;
     }
 
     .section-title p {
 
-        font-size:
-            12px;
+        font-size: 14px;
+
+        line-height: 1.7;
     }
 
     .product-card {
 
-        min-height:
-            590px;
+        min-height: 600px;
 
-        padding:
-            20px 15px 35px;
+        padding: 20px 15px 40px;
     }
 
     .product-image {
 
-        height:
-            420px;
+        height: 420px;
     }
 
     .product-card::before {
 
-        width:
-            350px;
+        width: 355px;
 
-        height:
-            350px;
+        height: 355px;
 
-        top:
-            230px;
+        top: 230px;
     }
 
     .product-image img {
 
-        height:
-            410px;
+        height: 410px;
 
-        max-width:
-            94%;
+        max-width: 94%;
     }
 
     .product-info h3 {
 
-        font-size:
-            23px;
+        font-size: 25px;
+
+        line-height: 1.25;
     }
 
     .product-info p {
 
-        font-size:
-            10px;
+        font-size: 13px;
 
-        max-width:
-            310px;
+        line-height: 1.65;
+
+        max-width: 320px;
     }
 
 
@@ -2457,20 +1934,44 @@ footer {
     .find-section,
     .how-section {
 
-        padding:
-            70px 20px;
+        padding: 75px 20px;
     }
 
     .about-image {
 
-        min-height:
-            320px;
+        min-height: 320px;
+    }
+
+    .about-content span {
+
+        font-size: 10px;
+    }
+
+    .about-content h2 {
+
+        font-size: 32px;
+    }
+
+    .about-content p {
+
+        font-size: 14px;
+
+        line-height: 1.8;
     }
 
     .about-features {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .feature strong {
+
+        font-size: 12px;
+    }
+
+    .feature span {
+
+        font-size: 12px;
     }
 
 
@@ -2478,80 +1979,67 @@ footer {
 
     .location-main {
 
-        margin-top:
-            35px;
+        margin-top: 35px;
 
-        padding:
-            24px 20px;
+        padding: 25px 20px;
 
-        grid-template-columns:
-            auto 1fr;
+        grid-template-columns: auto 1fr;
 
-        gap:
-            17px;
+        gap: 18px;
 
-        border-radius:
-            10px;
+        border-radius: 11px;
     }
 
     .location-pin {
 
-        width:
-            50px;
+        width: 52px;
 
-        height:
-            50px;
+        height: 52px;
 
-        min-width:
-            50px;
+        min-width: 52px;
 
-        font-size:
-            22px;
+        font-size: 23px;
     }
 
     .location-content h3 {
 
-        font-size:
-            15px;
+        font-size: 17px;
+
+        line-height: 1.35;
     }
 
     .location-content .location-type {
 
-        font-size:
-            8px;
+        font-size: 9px;
 
-        letter-spacing:
-            1px;
+        letter-spacing: 1.1px;
     }
 
     .location-content p {
 
-        font-size:
-            10px;
+        font-size: 12px;
+
+        line-height: 1.6;
     }
 
     .location-button {
 
-        grid-column:
-            1 / -1;
+        grid-column: 1 / -1;
 
-        width:
-            100%;
+        width: 100%;
 
-        padding:
-            14px;
+        padding: 15px;
 
-        font-size:
-            10px;
+        font-size: 11px;
     }
 
     .location-note {
 
-        font-size:
-            10px;
+        font-size: 12px;
 
-        padding:
-            0 15px;
+        line-height: 1.7;
+
+        padding: 0 15px;
     }
 
 
@@ -2559,26 +2047,70 @@ footer {
 
     .reseller-section {
 
-        padding:
-            75px 20px;
+        padding: 78px 20px;
+    }
+
+    .reseller-container span {
+
+        font-size: 10px;
     }
 
     .reseller-container h2 {
 
-        font-size:
-            32px;
+        font-size: 33px;
+
+        line-height: 1.15;
+    }
+
+    .reseller-container > p {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+    .reseller-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+        padding: 16px;
+
+        font-size: 11px;
     }
 
 
-    /* STEPS */
+    /* COMO FUNCIONA */
 
     .steps {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
-        gap:
-            35px;
+        gap: 40px;
+
+        margin-top: 45px;
+    }
+
+    .step-number {
+
+        width: 58px;
+
+        height: 58px;
+    }
+
+    .step h3 {
+
+        font-size: 13px;
+    }
+
+    .step p {
+
+        font-size: 12px;
+
+        max-width: 300px;
+
+        margin: auto;
     }
 
 
@@ -2586,29 +2118,67 @@ footer {
 
     .final-cta {
 
-        padding:
-            65px 20px;
+        padding: 70px 20px;
+    }
+
+    .final-cta h2 {
+
+        font-size: 30px;
+
+        line-height: 1.2;
+    }
+
+    .final-cta p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
     }
 
 
     /* FOOTER */
 
+    footer {
+
+        padding: 50px 25px 30px;
+    }
+
     .footer-container {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
-        gap:
-            35px;
+        gap: 38px;
+    }
+
+    .footer-logo-text {
+
+        font-size: 28px;
+    }
+
+    .footer-logo p {
+
+        font-size: 12px;
+    }
+
+    .footer-column h3 {
+
+        font-size: 11px;
+    }
+
+    .footer-column a {
+
+        font-size: 12px;
+
+        margin-bottom: 13px;
     }
 
     .footer-bottom {
 
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        text-align:
-            center;
+        text-align: center;
+
+        font-size: 10px;
     }
 
 }
@@ -2622,74 +2192,60 @@ footer {
 
     .hero-container {
 
-        padding:
-            34px 15px 0;
+        padding: 36px 15px 0;
     }
 
     .hero h1 {
 
-        font-size:
-            33px;
+        font-size: 34px;
     }
 
     .hero p {
 
-        font-size:
-            12px;
+        font-size: 14px;
 
-        max-width:
-            325px;
+        max-width: 325px;
     }
 
     .hero-product::before {
 
-        width:
-            390px;
+        width: 390px;
 
-        height:
-            390px;
+        height: 390px;
     }
 
     .hero-product::after {
 
-        width:
-            270px;
+        width: 270px;
 
-        height:
-            270px;
+        height: 270px;
     }
 
     .hero-product img {
 
-        max-width:
-            350px;
+        max-width: 350px;
     }
 
     .product-card::before {
 
-        width:
-            315px;
+        width: 315px;
 
-        height:
-            315px;
+        height: 315px;
     }
 
     .product-image img {
 
-        height:
-            375px;
+        height: 375px;
     }
 
     .product-image {
 
-        height:
-            395px;
+        height: 395px;
     }
 
     .product-card {
 
-        min-height:
-            565px;
+        min-height: 565px;
     }
 
 }
@@ -2703,32 +2259,26 @@ footer {
 
     .hero h1 {
 
-        font-size:
-            30px;
+        font-size: 31px;
     }
 
     .hero-product img {
 
-        max-width:
-            320px;
+        max-width: 320px;
     }
 
     .hero-product::before {
 
-        width:
-            330px;
+        width: 330px;
 
-        height:
-            330px;
+        height: 330px;
     }
 
     .hero-product::after {
 
-        width:
-            230px;
+        width: 230px;
 
-        height:
-            230px;
+        height: 230px;
     }
 
 }
@@ -2747,63 +2297,58 @@ footer {
 
 <header>
 
-    <div class="header-container">
+<div class="header-container">
 
-        <a
-            href="#inicio"
-            class="logo"
-        >
+<a href="#inicio" class="logo">
 
-            <div class="logo-text">
+<div class="logo-text">
+Só<span>Chef</span>
+</div>
 
-                Só<span>Chef</span>
-
-            </div>
-
-        </a>
+</a>
 
 
-        <nav>
+<nav>
 
-            <a href="#inicio">
-                INÍCIO
-            </a>
+<a href="#inicio">
+INÍCIO
+</a>
 
-            <a href="#produtos">
-                PRODUTOS
-            </a>
+<a href="#produtos">
+PRODUTOS
+</a>
 
-            <a href="#onde-encontrar">
-                ONDE ENCONTRAR
-            </a>
+<a href="#onde-encontrar">
+ONDE ENCONTRAR
+</a>
 
-            <a href="#revendedor">
-                SEJA UM REVENDEDOR
-            </a>
+<a href="#revendedor">
+SEJA UM REVENDEDOR
+</a>
 
-            <a href="#contato">
-                CONTATO
-            </a>
+<a href="#contato">
+CONTATO
+</a>
 
-        </nav>
-
-
-        <a
-            href="#revendedor"
-            class="header-button"
-        >
-            SEJA REVENDEDOR
-        </a>
+</nav>
 
 
-        <button
-            class="mobile-menu-button"
-            aria-label="Abrir menu"
-        >
-            ☰
-        </button>
+<a
+href="#revendedor"
+class="header-button"
+>
+SEJA REVENDEDOR
+</a>
 
-    </div>
+
+<button
+class="mobile-menu-button"
+aria-label="Abrir menu"
+>
+☰
+</button>
+
+</div>
 
 </header>
 
@@ -2821,76 +2366,76 @@ footer {
 ===================================================== -->
 
 <section
-    class="hero"
-    id="inicio"
+class="hero"
+id="inicio"
 >
 
-    <div class="hero-container">
+<div class="hero-container">
 
 
-        <div class="hero-text">
+<div class="hero-text">
 
-            <span class="hero-tag">
-                LINHA DE SANDUÍCHES
-            </span>
-
-
-            <h1>
-
-                Sabor que cabe
-
-                <br>
-
-                <span>
-                    no seu negócio.
-                </span>
-
-            </h1>
+<span class="hero-tag">
+LINHA DE SANDUÍCHES
+</span>
 
 
-            <p>
+<h1>
 
-                Sanduíches naturais prontos para
-                consumo, desenvolvidos para levar
-                praticidade, sabor e qualidade a
-                diferentes pontos de venda.
+Sabor que cabe
 
-            </p>
+<br>
 
+<span>
+no seu negócio.
+</span>
 
-            <div class="hero-buttons">
-
-                <a
-                    href="#produtos"
-                    class="btn-primary"
-                >
-                    CONHEÇA NOSSOS PRODUTOS
-                </a>
+</h1>
 
 
-                <a
-                    href="#revendedor"
-                    class="btn-secondary"
-                >
-                    QUERO REVENDER
-                </a>
+<p>
 
-            </div>
+Sanduíches naturais prontos para
+consumo, desenvolvidos para levar
+praticidade, sabor e qualidade a
+diferentes pontos de venda.
 
-        </div>
+</p>
 
 
-        <div class="hero-product">
+<div class="hero-buttons">
 
-            <img
-                src="https://res.cloudinary.com/f5yuukov/image/upload/v1788031330/headline.png"
-                alt="Só Chef - Sanduíches naturais"
-            >
+<a
+href="#produtos"
+class="btn-primary"
+>
+CONHEÇA NOSSOS PRODUTOS
+</a>
 
-        </div>
+
+<a
+href="#revendedor"
+class="btn-secondary"
+>
+QUERO REVENDER
+</a>
+
+</div>
+
+</div>
 
 
-    </div>
+<div class="hero-product">
+
+<img
+src="https://res.cloudinary.com/f5yuukov/image/upload/v1788031330/headline.png"
+alt="Só Chef - Sanduíches naturais"
+>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -2901,163 +2446,169 @@ footer {
 ===================================================== -->
 
 <section
-    class="products-section"
-    id="produtos"
+class="products-section"
+id="produtos"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>
-            CONHEÇA NOSSA LINHA
-        </span>
+<span>
+CONHEÇA NOSSA LINHA
+</span>
 
-        <h2>
-            Sanduíches naturais
-        </h2>
+<h2>
+Sanduíches naturais
+</h2>
 
-        <p>
+<p>
 
-            Uma linha pensada para diferentes
-            momentos, com produtos práticos
-            e prontos para consumo.
+Uma linha pensada para diferentes
+momentos, com produtos práticos
+e prontos para consumo.
 
-        </p>
+</p>
 
-    </div>
+</div>
 
 
-    <div class="products-grid">
+<div class="products-grid">
 
 
-        <article
-            class="product-card integral"
-        >
+<!-- PRODUTO 1 -->
 
-            <div class="product-image">
+<article
+class="product-card integral"
+>
 
-                <img
-                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
-                    alt="Pão Integral com Frango - Só Chef"
-                >
+<div class="product-image">
 
-            </div>
+<img
+src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029181/3.png"
+alt="Pão Integral com Frango - Só Chef"
+>
 
+</div>
 
-            <div class="product-info">
 
-                <h3>
+<div class="product-info">
 
-                    Pão Integral
+<h3>
 
-                    <br>
+Pão Integral
 
-                    com Frango
+<br>
 
-                </h3>
+com Frango
 
+</h3>
 
-                <p>
 
-                    Pão integral combinado
-                    com frango, uma opção leve,
-                    prática e saborosa para o
-                    dia a dia.
+<p>
 
-                </p>
+Pão integral combinado
+com frango, uma opção leve,
+prática e saborosa para o
+dia a dia.
 
-            </div>
+</p>
 
-        </article>
+</div>
 
+</article>
 
 
-        <article
-            class="product-card cream"
-        >
 
-            <div class="product-image">
+<!-- PRODUTO 2 -->
 
-                <img
-                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
-                    alt="Pão Tradicional com Frango e Cream Cheese - Só Chef"
-                >
+<article
+class="product-card cream"
+>
 
-            </div>
+<div class="product-image">
 
+<img
+src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
+alt="Pão Tradicional com Frango e Cream Cheese - Só Chef"
+>
 
-            <div class="product-info">
+</div>
 
-                <h3>
 
-                    Pão Tradicional
+<div class="product-info">
 
-                    <br>
+<h3>
 
-                    com Frango e
+Pão Tradicional
 
-                    <br>
+<br>
 
-                    Cream Cheese
+com Frango e
 
-                </h3>
+<br>
 
+Cream Cheese
 
-                <p>
+</h3>
 
-                    A combinação de frango
-                    e cream cheese em um
-                    sanduíche cremoso,
-                    prático e cheio de sabor.
 
-                </p>
+<p>
 
-            </div>
+A combinação de frango
+e cream cheese em um
+sanduíche cremoso,
+prático e cheio de sabor.
 
-        </article>
+</p>
 
+</div>
 
+</article>
 
-        <article
-            class="product-card peru"
-        >
 
-            <div class="product-image">
 
-                <img
-                    src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029179/1.png"
-                    alt="Pão Tradicional com Peito de Peru - Só Chef"
-                >
+<!-- PRODUTO 3 -->
 
-            </div>
+<article
+class="product-card peru"
+>
 
+<div class="product-image">
 
-            <div class="product-info">
+<img
+src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029179/1.png"
+alt="Pão Tradicional com Peito de Peru - Só Chef"
+>
 
-                <h3>
+</div>
 
-                    Pão Tradicional
 
-                    <br>
+<div class="product-info">
 
-                    com Peito de Peru
+<h3>
 
-                </h3>
+Pão Tradicional
 
+<br>
 
-                <p>
+com Peito de Peru
 
-                    Uma opção leve e saborosa,
-                    perfeita para quem procura
-                    praticidade no dia a dia.
+</h3>
 
-                </p>
 
-            </div>
+<p>
 
-        </article>
+Uma opção leve e saborosa,
+perfeita para quem procura
+praticidade no dia a dia.
 
+</p>
 
-    </div>
+</div>
+
+</article>
+
+
+</div>
 
 </section>
 
@@ -3068,127 +2619,127 @@ footer {
 ===================================================== -->
 
 <section
-    class="about-section"
+class="about-section"
 >
 
-    <div class="about-container">
+<div class="about-container">
 
 
-        <div class="about-image">
+<div class="about-image">
 
-            <img
-                src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
-                alt="Produto Só Chef"
-            >
+<img
+src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
+alt="Produto Só Chef"
+>
 
-        </div>
-
-
-        <div class="about-content">
-
-            <span>
-                SOBRE A SÓ CHEF
-            </span>
+</div>
 
 
-            <h2>
+<div class="about-content">
 
-                Mais que um sanduíche.
-                Uma solução para o seu negócio.
-
-            </h2>
-
-
-            <p>
-
-                A Só Chef nasceu com uma
-                proposta simples: oferecer
-                sanduíches naturais práticos,
-                saborosos e preparados para
-                chegar a diferentes pontos
-                de venda.
-
-            </p>
+<span>
+SOBRE A SÓ CHEF
+</span>
 
 
-            <p>
+<h2>
 
-                Nossa estrutura foi pensada
-                para trabalhar junto de
-                revendedores que querem
-                ampliar seu mix de produtos
-                com uma opção pronta para
-                consumo.
+Mais que um sanduíche.
+Uma solução para o seu negócio.
 
-            </p>
+</h2>
 
 
-            <div class="about-features">
+<p>
+
+A Só Chef nasceu com uma
+proposta simples: oferecer
+sanduíches naturais práticos,
+saborosos e preparados para
+chegar a diferentes pontos
+de venda.
+
+</p>
 
 
-                <div class="feature">
+<p>
 
-                    <strong>
-                        PRODUTO PRONTO
-                    </strong>
+Nossa estrutura foi pensada
+para trabalhar junto de
+revendedores que querem
+ampliar seu mix de produtos
+com uma opção pronta para
+consumo.
 
-                    <span>
-                        Embalagem individual
-                        e pronta para exposição
-                        e venda.
-                    </span>
-
-                </div>
+</p>
 
 
-                <div class="feature">
-
-                    <strong>
-                        PADRÃO DE QUALIDADE
-                    </strong>
-
-                    <span>
-                        Uma linha desenvolvida
-                        para manter consistência
-                        e sabor.
-                    </span>
-
-                </div>
+<div class="about-features">
 
 
-                <div class="feature">
+<div class="feature">
 
-                    <strong>
-                        PRATICIDADE
-                    </strong>
+<strong>
+PRODUTO PRONTO
+</strong>
 
-                    <span>
-                        Uma solução prática para
-                        diferentes pontos de venda.
-                    </span>
+<span>
+Embalagem individual
+e pronta para exposição
+e venda.
+</span>
 
-                </div>
-
-
-                <div class="feature">
-
-                    <strong>
-                        PARCERIA
-                    </strong>
-
-                    <span>
-                        Estrutura comercial pensada
-                        para nossos revendedores.
-                    </span>
-
-                </div>
+</div>
 
 
-            </div>
+<div class="feature">
 
-        </div>
+<strong>
+PADRÃO DE QUALIDADE
+</strong>
 
-    </div>
+<span>
+Uma linha desenvolvida
+para manter consistência
+e sabor.
+</span>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+PRATICIDADE
+</strong>
+
+<span>
+Uma solução prática para
+diferentes pontos de venda.
+</span>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+PARCERIA
+</strong>
+
+<span>
+Estrutura comercial pensada
+para nossos revendedores.
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -3199,85 +2750,85 @@ footer {
 ===================================================== -->
 
 <section
-    class="find-section"
-    id="onde-encontrar"
+class="find-section"
+id="onde-encontrar"
 >
 
-    <div class="find-container">
+<div class="find-container">
 
 
-        <div class="section-title">
+<div class="section-title">
 
-            <span>
-                ONDE ENCONTRAR
-            </span>
+<span>
+ONDE ENCONTRAR
+</span>
 
-            <h2>
-                Encontre a Só Chef
-            </h2>
+<h2>
+Encontre a Só Chef
+</h2>
 
-            <p>
+<p>
 
-                Nosso primeiro ponto de venda
-                já está aqui.
+Nosso primeiro ponto de venda
+já está aqui.
 
-            </p>
+</p>
 
-        </div>
-
-
-        <div class="location-main">
+</div>
 
 
-            <div class="location-pin">
-                📍
-            </div>
+<div class="location-main">
 
 
-            <div class="location-content">
-
-                <span class="location-type">
-                    PONTO DE VENDA
-                </span>
-
-                <h3>
-                    Posto Barra Mansa - Ipiranga 
-                </h3>
-
-                <p>
-
-                    Localização disponível
-                    no Google Maps.
-
-                </p>
-
-            </div>
+<div class="location-pin">
+📍
+</div>
 
 
-            <a
-                href="https://maps.app.goo.gl/D9VwRvTdnbuoeLCi9"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="location-button"
-            >
+<div class="location-content">
 
-                VER NO GOOGLE MAPS
+<span class="location-type">
+PONTO DE VENDA
+</span>
 
-            </a>
+<h3>
+Posto Barramansa
+</h3>
+
+<p>
+
+Encontre nossos sanduíches
+neste ponto de venda.
+
+</p>
+
+</div>
 
 
-        </div>
+<a
+href="https://maps.app.goo.gl/D9VwRvTdnbuoeLCi9"
+target="_blank"
+rel="noopener noreferrer"
+class="location-button"
+>
+
+VER NO GOOGLE MAPS
+
+</a>
 
 
-        <p class="location-note">
+</div>
 
-            Estamos ampliando nossa rede de
-            pontos de venda. Em breve, novos
-            locais estarão disponíveis por aqui.
 
-        </p>
+<p class="location-note">
 
-    </div>
+Estamos ampliando nossa rede de
+pontos de venda. Em breve, novos
+locais estarão disponíveis por aqui.
+
+</p>
+
+</div>
 
 </section>
 
@@ -3288,47 +2839,47 @@ footer {
 ===================================================== -->
 
 <section
-    class="reseller-section"
-    id="revendedor"
+class="reseller-section"
+id="revendedor"
 >
 
-    <div class="reseller-container">
+<div class="reseller-container">
 
-        <span>
-            SEJA UM REVENDEDOR
-        </span>
-
-
-        <h2>
-
-            Leve a Só Chef
-            para o seu ponto de venda.
-
-        </h2>
+<span>
+SEJA UM REVENDEDOR
+</span>
 
 
-        <p>
+<h2>
 
-            Se você possui um comércio,
-            posto, loja de conveniência,
-            cafeteria, mercado ou outro
-            ponto de venda, queremos
-            conhecer seu negócio.
+Leve a Só Chef
+para o seu ponto de venda.
 
-        </p>
+</h2>
 
 
-        <a
-            href="https://wa.me/5500000000000"
-            class="reseller-button"
-            target="_blank"
-        >
+<p>
 
-            QUERO SER REVENDEDOR
+Se você possui um comércio,
+posto, loja de conveniência,
+cafeteria, mercado ou outro
+ponto de venda, queremos
+conhecer seu negócio.
 
-        </a>
+</p>
 
-    </div>
+
+<a
+href="https://wa.me/5500000000000"
+class="reseller-button"
+target="_blank"
+>
+
+QUERO SER REVENDEDOR
+
+</a>
+
+</div>
 
 </section>
 
@@ -3339,110 +2890,110 @@ footer {
 ===================================================== -->
 
 <section
-    class="how-section"
+class="how-section"
 >
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>
-            COMO FUNCIONA
-        </span>
+<span>
+COMO FUNCIONA
+</span>
 
-        <h2>
-            Começar é simples.
-        </h2>
+<h2>
+Começar é simples.
+</h2>
 
-        <p>
+<p>
 
-            Um processo pensado para
-            aproximar a Só Chef do
-            seu negócio.
+Um processo pensado para
+aproximar a Só Chef do
+seu negócio.
 
-        </p>
+</p>
 
-    </div>
-
-
-
-    <div class="steps">
-
-
-        <div class="step">
-
-            <div class="step-number">
-                01
-            </div>
-
-            <h3>
-                CADASTRE-SE
-            </h3>
-
-            <p>
-                Conte para nossa equipe
-                sobre seu negócio.
-            </p>
-
-        </div>
+</div>
 
 
 
-        <div class="step">
-
-            <div class="step-number">
-                02
-            </div>
-
-            <h3>
-                FALE COM A EQUIPE
-            </h3>
-
-            <p>
-                Entendemos seu ponto de
-                venda e suas necessidades.
-            </p>
-
-        </div>
+<div class="steps">
 
 
+<div class="step">
 
-        <div class="step">
+<div class="step-number">
+01
+</div>
 
-            <div class="step-number">
-                03
-            </div>
+<h3>
+CADASTRE-SE
+</h3>
 
-            <h3>
-                RECEBA OS PRODUTOS
-            </h3>
+<p>
+Conte para nossa equipe
+sobre seu negócio.
+</p>
 
-            <p>
-                Nossa equipe orienta você
-                sobre o abastecimento.
-            </p>
-
-        </div>
+</div>
 
 
 
-        <div class="step">
+<div class="step">
 
-            <div class="step-number">
-                04
-            </div>
+<div class="step-number">
+02
+</div>
 
-            <h3>
-                VENDA SÓ CHEF
-            </h3>
+<h3>
+FALE COM A EQUIPE
+</h3>
 
-            <p>
-                Ofereça uma opção prática
-                e saborosa aos seus clientes.
-            </p>
+<p>
+Entendemos seu ponto de
+venda e suas necessidades.
+</p>
 
-        </div>
+</div>
 
 
-    </div>
+
+<div class="step">
+
+<div class="step-number">
+03
+</div>
+
+<h3>
+RECEBA OS PRODUTOS
+</h3>
+
+<p>
+Nossa equipe orienta você
+sobre o abastecimento.
+</p>
+
+</div>
+
+
+
+<div class="step">
+
+<div class="step-number">
+04
+</div>
+
+<h3>
+VENDA SÓ CHEF
+</h3>
+
+<p>
+Ofereça uma opção prática
+e saborosa aos seus clientes.
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
@@ -3453,35 +3004,35 @@ footer {
 ===================================================== -->
 
 <section
-    class="final-cta"
-    id="contato"
+class="final-cta"
+id="contato"
 >
 
-    <h2>
+<h2>
 
-        Quer levar a Só Chef
-        para o seu negócio?
+Quer levar a Só Chef
+para o seu negócio?
 
-    </h2>
-
-
-    <p>
-
-        Fale com nossa equipe e saiba
-        como se tornar um revendedor.
-
-    </p>
+</h2>
 
 
-    <a
-        href="https://wa.me/5500000000000"
-        class="btn-primary"
-        target="_blank"
-    >
+<p>
 
-        FALAR COM A SÓ CHEF
+Fale com nossa equipe e saiba
+como se tornar um revendedor.
 
-    </a>
+</p>
+
+
+<a
+href="https://wa.me/5500000000000"
+class="btn-primary"
+target="_blank"
+>
+
+FALAR COM A SÓ CHEF
+
+</a>
 
 </section>
 
@@ -3496,96 +3047,94 @@ footer {
 
 <footer>
 
-    <div class="footer-container">
+<div class="footer-container">
 
 
-        <div class="footer-logo">
+<div class="footer-logo">
 
-            <div class="footer-logo-text">
-                Só Chef
-            </div>
+<div class="footer-logo-text">
+Só Chef
+</div>
 
-            <p>
+<p>
 
-                Sanduíches naturais pensados
-                para levar sabor, praticidade
-                e qualidade para diferentes
-                pontos de venda.
+Sanduíches naturais pensados
+para levar sabor, praticidade
+e qualidade para diferentes
+pontos de venda.
 
-            </p>
+</p>
 
-        </div>
-
-
-
-        <div class="footer-column">
-
-            <h3>
-                Navegação
-            </h3>
-
-            <a href="#inicio">
-                Início
-            </a>
-
-            <a href="#produtos">
-                Produtos
-            </a>
-
-            <a href="#onde-encontrar">
-                Onde Encontrar
-            </a>
-
-            <a href="#revendedor">
-                Seja um Revendedor
-            </a>
-
-        </div>
+</div>
 
 
 
-        <div class="footer-column">
+<div class="footer-column">
 
-            <h3>
-                Contato
-            </h3>
+<h3>
+Navegação
+</h3>
 
-            <a href="#">
-                Instagram
-            </a>
+<a href="#inicio">
+Início
+</a>
 
-            <a
-                href="https://wa.me/5500000000000"
-                target="_blank"
-            >
-                WhatsApp
-            </a>
+<a href="#produtos">
+Produtos
+</a>
 
-            <a
-                href="mailto:contato@sochef.com.br"
-            >
-                contato@sochef.com.br
-            </a>
+<a href="#onde-encontrar">
+Onde Encontrar
+</a>
 
-        </div>
+<a href="#revendedor">
+Seja um Revendedor
+</a>
 
-
-    </div>
+</div>
 
 
 
-    <div class="footer-bottom">
+<div class="footer-column">
 
-        <span>
-            © 2026 Só Chef.
-            Todos os direitos reservados.
-        </span>
+<h3>
+Contato
+</h3>
 
-        <span>
-            Sanduíches naturais.
-        </span>
+<a href="#">
+Instagram
+</a>
 
-    </div>
+<a
+href="https://wa.me/5500000000000"
+target="_blank"
+>
+WhatsApp
+</a>
+
+<a href="mailto:contato@sochef.com.br">
+contato@sochef.com.br
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 Só Chef.
+Todos os direitos reservados.
+</span>
+
+<span>
+Sanduíches naturais.
+</span>
+
+</div>
 
 </footer>
 
@@ -3598,90 +3147,90 @@ footer {
 <script>
 
 const mobileButton =
-    document.querySelector(
-        '.mobile-menu-button'
-    );
+document.querySelector(
+'.mobile-menu-button'
+);
 
 
 mobileButton.addEventListener(
-    'click',
-    function() {
+'click',
+function() {
 
-        const nav =
-            document.querySelector('nav');
+const nav =
+document.querySelector('nav');
 
 
-        if (
-            nav.style.display === 'flex'
-        ) {
+if (
+nav.style.display === 'flex'
+) {
 
-            nav.style.display =
-                'none';
+nav.style.display =
+'none';
 
-        } else {
+} else {
 
-            nav.style.display =
-                'flex';
+nav.style.display =
+'flex';
 
-            nav.style.position =
-                'absolute';
+nav.style.position =
+'absolute';
 
-            nav.style.top =
-                '70px';
+nav.style.top =
+'72px';
 
-            nav.style.left =
-                '0';
+nav.style.left =
+'0';
 
-            nav.style.width =
-                '100%';
+nav.style.width =
+'100%';
 
-            nav.style.background =
-                '#ffffff';
+nav.style.background =
+'#ffffff';
 
-            nav.style.padding =
-                '25px 20px';
+nav.style.padding =
+'25px 20px';
 
-            nav.style.flexDirection =
-                'column';
+nav.style.flexDirection =
+'column';
 
-            nav.style.alignItems =
-                'flex-start';
+nav.style.alignItems =
+'flex-start';
 
-            nav.style.gap =
-                '20px';
+nav.style.gap =
+'22px';
 
-            nav.style.boxShadow =
-                '0 10px 20px rgba(0,0,0,0.08)';
+nav.style.boxShadow =
+'0 10px 20px rgba(0,0,0,0.08)';
 
-        }
+}
 
-    }
+}
 );
 
 
 document
-    .querySelectorAll('nav a')
-    .forEach(function(link) {
+.querySelectorAll('nav a')
+.forEach(function(link) {
 
-        link.addEventListener(
-            'click',
-            function() {
+link.addEventListener(
+'click',
+function() {
 
-                if (
-                    window.innerWidth <= 1000
-                ) {
+if (
+window.innerWidth <= 1000
+) {
 
-                    document.querySelector(
-                        'nav'
-                    ).style.display =
-                        'none';
+document.querySelector(
+'nav'
+).style.display =
+'none';
 
-                }
+}
 
-            }
-        );
+}
+);
 
-    });
+});
 
 </script>
 
