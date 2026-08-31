@@ -50,7 +50,8 @@ body {
     overflow-x: hidden;
 }
 
-img {
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -870,11 +871,20 @@ nav a:hover::after {
     align-items: center;
 }
 
-.about-image {
+
+/* =====================================================
+   VÍDEO DA SEÇÃO SOBRE
+===================================================== */
+
+.about-video {
 
     background: var(--green-light);
 
     min-height: 450px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
 
     display: flex;
 
@@ -882,22 +892,28 @@ nav a:hover::after {
 
     justify-content: center;
 
-    border-radius: 6px;
-
-    overflow: hidden;
+    position: relative;
 }
 
-.about-image img {
+.about-video video {
 
-    width: 75%;
+    width: 100%;
 
-    max-width: 390px;
+    height: 100%;
 
-    filter:
-        drop-shadow(
-            0 20px 25px rgba(0,0,0,0.12)
-        );
+    min-height: 450px;
+
+    object-fit: cover;
+
+    display: block;
+
+    pointer-events: none;
 }
+
+
+/* =====================================================
+   SOBRE CONTEÚDO
+===================================================== */
 
 .about-content span {
 
@@ -1540,6 +1556,16 @@ footer {
         gap: 55px;
     }
 
+    .about-video {
+
+        min-height: 500px;
+    }
+
+    .about-video video {
+
+        min-height: 500px;
+    }
+
     .steps {
 
         grid-template-columns: repeat(2, 1fr);
@@ -1937,9 +1963,31 @@ footer {
         padding: 75px 20px;
     }
 
-    .about-image {
+    .about-container {
 
-        min-height: 320px;
+        gap: 45px;
+    }
+
+    .about-video {
+
+        width: 100%;
+
+        min-height: 380px;
+
+        height: 380px;
+
+        border-radius: 6px;
+    }
+
+    .about-video video {
+
+        width: 100%;
+
+        height: 100%;
+
+        min-height: 380px;
+
+        object-fit: cover;
     }
 
     .about-content span {
@@ -2248,6 +2296,18 @@ footer {
         min-height: 565px;
     }
 
+    .about-video {
+
+        min-height: 340px;
+
+        height: 340px;
+    }
+
+    .about-video video {
+
+        min-height: 340px;
+    }
+
 }
 
 
@@ -2279,6 +2339,18 @@ footer {
         width: 230px;
 
         height: 230px;
+    }
+
+    .about-video {
+
+        min-height: 310px;
+
+        height: 310px;
+    }
+
+    .about-video video {
+
+        min-height: 310px;
     }
 
 }
@@ -2625,15 +2697,32 @@ class="about-section"
 <div class="about-container">
 
 
-<div class="about-image">
+<!-- VÍDEO -->
 
-<img
-src="https://res.cloudinary.com/f5yuukov/image/upload/v1788029185/2.png"
-alt="Produto Só Chef"
+<div class="about-video">
+
+<video
+autoplay
+muted
+loop
+playsinline
+preload="auto"
+aria-label="Sanduíches Só Chef em exposição"
 >
+
+<source
+src="https://res.cloudinary.com/f5yuukov/video/upload/e_volume:0/v1788181586/Animar_sandu%C3%ADches_S%C3%B3_Chef_comerc__202608311005.mp4"
+type="video/mp4"
+>
+
+Seu navegador não suporta vídeos.
+
+</video>
 
 </div>
 
+
+<!-- TEXTO -->
 
 <div class="about-content">
 
@@ -3229,6 +3318,42 @@ document.querySelector(
 
 }
 );
+
+});
+
+
+/* =====================================================
+   GARANTIR AUTOPLAY NO MOBILE
+===================================================== */
+
+document.addEventListener(
+'DOMContentLoaded',
+function() {
+
+const videos =
+document.querySelectorAll(
+'video'
+);
+
+videos.forEach(function(video) {
+
+video.muted = true;
+
+video.setAttribute(
+'muted',
+''
+);
+
+video.setAttribute(
+'playsinline',
+''
+);
+
+video.play().catch(function() {
+
+});
+
+});
 
 });
 
